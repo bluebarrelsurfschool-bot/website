@@ -251,13 +251,16 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .bpr .tags li{border-color:rgba(255,255,255,.65);background:rgba(255,255,255,.1);color:#fff}
 .bb .bpr .cta{margin:0;justify-content:flex-end}
 
-/* ---- hand-drawn illustrations (locations) ---- */
+/* ---- hand-drawn illustrations (locations, surf lessons) ---- */
 .bb .doodle{display:block;height:auto;pointer-events:none}
 .bb .has-doodle{position:relative}
 .bb .doodle.van{width:260px;max-width:75%;margin-top:34px;color:var(--ink)}
 .bb .doodle.palm{position:absolute;right:30px;top:-40px;width:110px;color:var(--ink)}
 .bb .doodle.gulls{position:absolute;right:30px;top:-72px;width:230px;color:var(--lite)}
 .bb .has-doodle > h2{padding-right:150px}
+.bb .doodle.boards{width:150px;margin-top:34px;color:var(--ink)}
+.bb .doodle.fin{position:absolute;right:30px;top:-34px;width:120px;color:var(--ink)}
+.bb .doodle.wave2{position:absolute;right:30px;top:-64px;width:230px;color:var(--lite)}
 
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
@@ -288,6 +291,9 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.van{width:200px;margin-top:22px}
 .bb .doodle.palm{right:18px;top:-34px;width:62px}
 .bb .doodle.gulls{right:18px;top:-44px;width:120px}
+.bb .doodle.boards{width:110px;margin-top:22px}
+.bb .doodle.fin{right:18px;top:-36px;width:66px}
+.bb .doodle.wave2{right:18px;top:-46px;width:120px}
 .bb .has-doodle > h2{padding-right:70px}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
