@@ -214,6 +214,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .pk{border-top:2px solid var(--ink);padding-top:26px}
 .bb .pk .big{margin:14px 0 18px}
 .bb .pk p{color:var(--mute)}
+.bb .pk .route{margin:10px 0 26px}
 .bb .inc{list-style:none;margin:16px 0 24px;padding:0}
 .bb .inc li{position:relative;margin:0;padding:10px 0 10px 30px;border-bottom:1px solid var(--line)}
 .bb .inc li::before{content:"\2713";position:absolute;left:2px;top:10px;font-weight:800;color:var(--sea)}
@@ -243,6 +244,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .tracks,.bb .pks{grid-template-columns:1fr}
 .bb .pks{gap:0}
 .bb .pk{padding-bottom:30px}
+.bb .steps b{font-size:2rem}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}

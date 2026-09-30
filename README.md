@@ -71,7 +71,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
-| The Blueprint | `the-blueprint.html` | Built; owner to confirm whether prices are per person and if equipment is included |
+| The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
 | Gift Vouchers, Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
