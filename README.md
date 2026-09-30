@@ -66,7 +66,8 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | About | `about.html` | Built; confirm whether Jack is the only instructor |
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
-| The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
+| Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
+| The Blueprint, Gift Vouchers, Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
 page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
@@ -84,6 +85,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Group Surf Lessons | `group-surf-lessons-cornwall` | Group Lessons | Group Surf Lessons in Cornwall \| Stag, Hen & Team Days | Private group surf lessons in Cornwall for stag and hen parties, corporate team days and birthdays. Up to 16 people, all kit included, no experience needed. |
 | About | `about` | About | About Blue Barrel \| Private Surf Coach in Cornwall | Meet Jack, founder of Blue Barrel Surf School: ISA-qualified, RLSS lifeguard trained and insured, offering private mobile surf lessons across Cornwall. |
 | Contact Us | `contact-us` | Contact | Contact Blue Barrel Surf School \| Surf Lessons Cornwall | Call 07572 526698 or email Blue Barrel Surf School about private surf lessons, group bookings and gift vouchers in Cornwall, or book your lesson online. |
+| Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
 
 ## Working notes for the next session
 
