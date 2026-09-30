@@ -72,7 +72,8 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
 | The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
-| Gift Vouchers, Blog | – | To do |
+| Gift Vouchers | `gift-vouchers.html` | Built; vouchers still requested by email. Owner to confirm voucher validity, Blueprint vouchers and payment |
+| Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
 page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
@@ -92,6 +93,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Contact Us | `contact-us` | Contact | Contact Blue Barrel Surf School \| Surf Lessons Cornwall | Call 07572 526698 or email Blue Barrel Surf School about private surf lessons, group bookings and gift vouchers in Cornwall, or book your lesson online. |
 | Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
 | The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
+| Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Physical or digital gift vouchers for private 2-hour surf lessons from £100, all equipment included. They pick the date. |
 
 ## Working notes for the next session
 
@@ -103,6 +105,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
   render it in Playwright (Chromium at /opt/pw-browsers/chromium) at 390px and 1280px, then send the user the page file and,
   if it changed, custom-css.css. The user replaces the whole Blue Barrel section in Custom CSS each time.
 - Hero headings are white (`--h1`). `.hero.fit` (plus an `img.fill` copy) shows the whole photo on desktop; it's used on About.
+- The live site has a mailto typo `bluebarrelsurfschool@gmai.com` (header/footer, outside the Code Blocks); the owner should fix it.
 - Reviews on Home are real customer quotes (Harley, Richard, Tom, Edward). Keep their wording and fix only spelling.
 - Keep Squarespace in mind: every Code Block sits alone in its own section, and scripts don't run inside the editor.
 - Give the SEO title (60 characters or fewer) and description (about 150–160 characters) for every page, and add them to the table above.

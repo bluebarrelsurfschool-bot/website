@@ -222,6 +222,20 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .when .inc li{padding-top:14px;padding-bottom:14px}
 .bb .when .inc li::before{top:14px}
 
+/* ---- gift vouchers page ---- */
+.bb .tickets{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+.bb .ticket{position:relative;display:flex;flex-direction:column;background:var(--bg);border-radius:14px;padding:24px 22px 22px;overflow:hidden;border-top:6px solid var(--sea)}
+.bb .ticket .tag{align-self:flex-start;margin-bottom:12px}
+.bb .ticket h3{font-size:1.35rem!important}
+.bb .t-price{font-family:var(--f-head);font-weight:800;font-size:3rem;line-height:1;letter-spacing:-.03em;color:var(--sea);margin:14px 0 12px}
+.bb .ticket p{color:var(--mute);font-size:1rem}
+.bb .t-bot{position:relative;margin-top:auto;padding-top:20px;border-top:2px dashed var(--line)}
+.bb .t-bot::before,.bb .t-bot::after{content:"";position:absolute;top:-11px;width:20px;height:20px;border-radius:50%;background:var(--panel)}
+.bb .t-bot::before{left:-32px}
+.bb .t-bot::after{right:-32px}
+.bb .t-bot .btn{display:block;text-align:center;padding-left:1em;padding-right:1em}
+@media (max-width:1000px){.bb .tickets{grid-template-columns:1fr 1fr}}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -245,6 +259,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .pks{gap:0}
 .bb .pk{padding-bottom:30px}
 .bb .steps b{font-size:2rem}
+.bb .tickets{grid-template-columns:1fr}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
