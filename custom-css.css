@@ -30,7 +30,9 @@ font-family:var(--f-body);font-weight:400;font-size:17px;line-height:1.6;text-al
 .page-section:has(.bb){padding-top:0!important;padding-bottom:0!important;min-height:0!important}
 .page-section:has(.bb) .content-wrapper{padding:0!important;max-width:none!important}
 .page-section:has(.bb) .fluid-engine{row-gap:0!important;padding:0!important}
-.sqs-block:has(.bb){padding:0!important}
+.page-section:has(.bb) .fluid-engine{display:block!important}
+.page-section:has(.bb) .fe-block,.page-section:has(.bb) .sqs-block,.page-section:has(.bb) .sqs-block-content{padding:0!important;margin:0!important;min-height:0!important}
+main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(.bb){margin-top:0!important}
 
 /* hero */
 .bb .hero{position:relative;color:#E6F1F0;background:var(--deep);padding:0;min-height:~"min(86vh, 720px)";display:flex;align-items:flex-end}
@@ -93,14 +95,16 @@ font-family:var(--f-body);font-weight:400;font-size:17px;line-height:1.6;text-al
 
 /* ---- locations page ---- */
 .bb .alt{background:var(--panel)}
-.bb .coast{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
-.bb .coast > .ph{height:420px;border-radius:14px;overflow:hidden;position:sticky;top:110px}
-.bb .coast .ruled{margin-top:26px}
-.bb .beach{padding:26px 0;border-bottom:1px solid var(--line)}
-.bb .beach h3{margin-bottom:10px!important}
-.bb .beach .where{font-weight:600;color:var(--sea);font-size:.95rem;margin:0 0 8px}
-.bb .beach p{color:var(--mute)}
-.bb .beach p:last-child{margin-bottom:0}
+.bb .tag{display:inline-block;border:1.5px solid var(--sea);color:var(--sea);border-radius:99px;padding:.2em .9em;font-weight:600;font-size:.95rem;margin:0 0 14px}
+.bb .loc{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
+.bb .loc:first-of-type{border-top:2px solid var(--ink);margin-top:36px}
+.bb .loc .ph{height:420px;border-radius:14px;overflow:hidden}
+.bb .loc.flip .ph{order:2}
+.bb .loc h3{margin-bottom:14px!important}
+.bb .loc p{color:var(--mute)}
+.bb .spot{display:grid;grid-template-columns:1fr 2fr;gap:12px 40px;padding:26px 0;border-bottom:1px solid var(--line)}
+.bb .spot .tag{margin-bottom:10px}
+.bb .spot p{margin:0;color:var(--mute)}
 .bb .lede .tags{margin-top:22px}
 .bb .winds{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 4px}
 .bb .winds button{-webkit-appearance:none;appearance:none;font-family:var(--f-body)!important;font-size:1rem!important;font-weight:600!important;line-height:1!important;letter-spacing:0!important;text-transform:none!important;min-width:3.4em;padding:.7em 1em!important;border:2px solid var(--ink)!important;border-radius:99px!important;background:none!important;color:var(--ink)!important;cursor:pointer;box-shadow:none!important}
@@ -117,8 +121,10 @@ font-family:var(--f-body);font-weight:400;font-size:17px;line-height:1.6;text-al
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
 .bb .lv{grid-template-columns:1fr}
 .bb .lv .ph{height:200px}
-.bb .coast{grid-template-columns:1fr;gap:28px}
-.bb .coast > .ph{position:static;height:240px}
+.bb .loc,.bb .spot{grid-template-columns:1fr}
+.bb .loc{gap:24px}
+.bb .loc.flip .ph{order:0}
+.bb .loc .ph{height:260px}
 .bb .steps li{grid-template-columns:3rem 1fr}
 }
 @keyframes bbrise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
