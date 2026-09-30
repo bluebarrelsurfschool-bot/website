@@ -71,7 +71,8 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
-| The Blueprint, Gift Vouchers, Blog | – | To do |
+| The Blueprint | `the-blueprint.html` | Built; owner to confirm whether prices are per person and if equipment is included |
+| Gift Vouchers, Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
 page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
@@ -90,6 +91,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | About | `about` | About | About Blue Barrel \| Private Surf Coach in Cornwall | Meet Jack, founder of Blue Barrel Surf School: ISA-qualified, RLSS lifeguard trained and insured, offering private mobile surf lessons across Cornwall. |
 | Contact Us | `contact-us` | Contact | Contact Blue Barrel Surf School \| Surf Lessons Cornwall | Call 07572 526698 or email Blue Barrel Surf School about private surf lessons, group bookings and gift vouchers in Cornwall, or book your lesson online. |
 | Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
+| The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
 
 ## Working notes for the next session
 

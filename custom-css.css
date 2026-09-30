@@ -195,6 +195,32 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .bp a:not(.btn){color:#fff;font-weight:600}
 @media (max-width:1000px){.bb .keys{grid-template-columns:1fr 1fr}}
 
+/* ---- blueprint page ---- */
+.bb .quote .say{margin:0;font-family:var(--f-h1)!important;font-weight:400;font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;max-width:24ch;color:#fff}
+.bb .quote .say + .cite{font-weight:400;font-size:1.15rem;max-width:62ch}
+.bb .tracks{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;border-top:2px solid var(--ink);margin-top:30px}
+.bb .tracks > div{padding:28px 0;border-bottom:1px solid var(--line)}
+.bb .tracks h3{margin-bottom:6px!important}
+.bb .tracks p{color:var(--mute)}
+.bb .tracks p.lbl,.bb .pk p.lbl{margin:20px 0 4px;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sea)}
+.bb .route{list-style:none;margin:10px 0 0;padding:0}
+.bb .route li{position:relative;margin:0;padding:0 0 16px 30px;font-weight:600}
+.bb .route li::before{content:"";position:absolute;left:0;top:.35em;width:14px;height:14px;border-radius:50%;border:2px solid var(--sea);background:var(--panel)}
+.bb .route li::after{content:"";position:absolute;left:6px;top:1.35em;bottom:-.1em;width:2px;background:var(--sea);opacity:.45}
+.bb .route li:last-child{padding-bottom:0}
+.bb .route li:last-child::before{background:var(--sun);border-color:var(--ink)}
+.bb .route li:last-child::after{content:none}
+.bb .pks{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:34px}
+.bb .pk{border-top:2px solid var(--ink);padding-top:26px}
+.bb .pk .big{margin:14px 0 18px}
+.bb .pk p{color:var(--mute)}
+.bb .inc{list-style:none;margin:16px 0 24px;padding:0}
+.bb .inc li{position:relative;margin:0;padding:10px 0 10px 30px;border-bottom:1px solid var(--line)}
+.bb .inc li::before{content:"\2713";position:absolute;left:2px;top:10px;font-weight:800;color:var(--sea)}
+.bb .when .inc{margin:0}
+.bb .when .inc li{padding-top:14px;padding-bottom:14px}
+.bb .when .inc li::before{top:14px}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -214,6 +240,9 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .terms{grid-template-columns:1fr;gap:36px}
 .bb .toc{position:static}
 .bb .cl li{grid-template-columns:2.6rem 1fr}
+.bb .tracks,.bb .pks{grid-template-columns:1fr}
+.bb .pks{gap:0}
+.bb .pk{padding-bottom:30px}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
