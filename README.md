@@ -72,7 +72,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
 | The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
-| Gift Vouchers | `gift-vouchers.html` | Built; vouchers still requested by email. Owner to confirm voucher validity, Blueprint vouchers and payment |
+| Gift Vouchers | `gift-vouchers.html` | Built; request by email, payment link, digital voucher with unique code, valid 12 months. No Blueprint vouchers |
 | Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
@@ -93,7 +93,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Contact Us | `contact-us` | Contact | Contact Blue Barrel Surf School \| Surf Lessons Cornwall | Call 07572 526698 or email Blue Barrel Surf School about private surf lessons, group bookings and gift vouchers in Cornwall, or book your lesson online. |
 | Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
 | The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
-| Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Physical or digital gift vouchers for private 2-hour surf lessons from £100, all equipment included. They pick the date. |
+| Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Digital surf lesson gift vouchers for private 2-hour lessons from £100, all equipment included. Valid for 12 months. |
 
 ## Working notes for the next session
 
