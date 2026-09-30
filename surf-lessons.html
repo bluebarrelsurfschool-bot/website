@@ -1,13 +1,13 @@
 <!-- BLUE BARREL: SURF LESSONS PAGE
      Paste into ONE Code Block (untick "Display Source") on your Surf Lessons page.
-     Fonts: Hello-Handmade Sans (headings, loaded by your site) + Bricolage Grotesque + Figtree.
+     Fonts: 'BB Handmade' (Hello-Handmade Sans, headings) is loaded by the @font-face rule in Custom CSS. Bricolage Grotesque + Figtree load below.
      The script pulls the page flush under the site header. To lift it further, raise --bb-pull (e.g. 40px) on .bb below.
      Scripts don't run in the Squarespace editor: check the live page or Preview. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
 .bb{--ink:#0A2A3B;--mute:#4A6472;--line:#B9CFD0;--sea:#0F5C7A;--deep:#082638;--sun:#FFC24A;--panel:#DCEBEA;--bg:#EAF2F1;--h1:#F15A29;--bb-pull:0px;
---f-h1:'Hello-Handmade Sans','Hello Handmade Sans',HelloHandmadeSansRegular,var(--heading-font-font-family,'Bricolage Grotesque'),Georgia,serif;
+--f-h1:'BB Handmade',var(--heading-font-font-family,'Bricolage Grotesque'),Georgia,serif;
 --f-head:'Bricolage Grotesque',Georgia,serif;--f-body:Figtree,system-ui,sans-serif;
 margin-top:calc(-1 * (var(--bb-pull) + var(--bb-auto,0px)));width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body);text-align:left}
 .bb *,.bb *::before,.bb *::after{box-sizing:border-box}
