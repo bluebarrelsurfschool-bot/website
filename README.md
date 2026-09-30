@@ -14,7 +14,7 @@ Work happens on branch `claude/blue-barrel-redesign-twaojg`.
 - **Don't put a `<style>` block in the page files.** It was lost every time the user pasted, which is why
   all styling moved to Custom CSS.
 - Squarespace Custom CSS is compiled as LESS. Wrap `calc()` and `min()` in `~"..."`, use longhand
-  `font-*` properties (no `font:` shorthand with `/`), and check it compiles with both `less@1.7.5` and `less@4`.
+  `font-*` properties (no `font:` shorthand with `/`), avoid `/` in values such as `grid-column:1 / -1` (old LESS divides it; use `span 2`), and check it compiles with both `less@1.7.5` and `less@4`.
 
 ## Design rules
 
@@ -63,8 +63,9 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Surf Lessons | `surf-lessons.html` | Live and checked on desktop and mobile |
 | Our Locations | `our-surf-lesson-locations.html` | Live; beach wind directions still need owner's check |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
+| About | `about.html` | Built; confirm whether Jack is the only instructor |
 | Home | – | Redesigned earlier outside this repo |
-| Contact Us, About Us, The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
+| Contact Us, The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
 
 Open items: the user is building on test pages and will swap slugs later (move the old page to
 `surf-lessons-old`, set the new page's slug, add a 301 from `/test`). Hayle as the base town in the schema isn't confirmed.

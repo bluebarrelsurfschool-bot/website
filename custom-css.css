@@ -121,6 +121,19 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .price .tbl a{font-weight:600;color:var(--sea)}
 .bb .price tr.on a{color:var(--ink)}
 
+/* ---- about page ---- */
+.bb .lede .stats{grid-column:span 2}
+.bb .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);margin-top:12px}
+.bb .stats div{padding:22px 16px 22px 0;border-bottom:1px solid var(--line)}
+.bb .stats b{display:block;font-family:var(--f-head);font-weight:800;font-size:clamp(2.6rem,6vw,4rem);line-height:1;letter-spacing:-.03em;color:var(--sea);margin-bottom:6px}
+.bb .stats span{color:var(--mute)}
+.bb .quote{background:var(--sea);color:#fff}
+.bb .quote blockquote{margin:0!important;padding:0!important;border:0!important;background:none!important;quotes:none;font-family:var(--f-h1)!important;font-style:normal!important;font-weight:400!important;font-size:clamp(2rem,5vw,3.4rem)!important;line-height:1.1!important;max-width:24ch;color:#fff!important}
+.bb .quote blockquote::before,.bb .quote blockquote::after{content:none!important}
+.bb .quote .cite{margin:22px 0 0;font-weight:600;color:#DDF0F4}
+.bb .creds{margin-top:26px}
+.bb .creds .slot:first-child{border-top:2px solid var(--ink)}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -131,6 +144,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .loc.flip .ph{order:0}
 .bb .loc .ph{height:260px}
 .bb .steps li{grid-template-columns:3rem 1fr}
+.bb .stats{grid-template-columns:1fr 1fr}
+.bb .lede .stats{grid-column:auto}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
