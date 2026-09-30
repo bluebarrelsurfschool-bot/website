@@ -148,6 +148,26 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .reviews figcaption{margin-top:12px;font-weight:600;color:var(--sea)}
 .bb .lv p a{color:var(--sea);font-weight:600}
 
+/* ---- contact page ---- */
+.bb .ways{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:2px solid var(--ink);margin-top:30px}
+.bb .ways > div{padding:28px 0;border-bottom:1px solid var(--line)}
+.bb .ways .tag{margin-bottom:12px}
+.bb .ways h3{margin-bottom:10px!important}
+.bb .ways p{color:var(--mute)}
+.bb .ring{display:inline-block;font-family:var(--f-head);font-weight:800;font-size:clamp(2rem,3.6vw,2.6rem);line-height:1.05;letter-spacing:-.03em;color:var(--sea)!important;text-decoration:none!important;overflow-wrap:anywhere}
+.bb .ring:hover{text-decoration:underline!important}
+.bb .ring.sm{font-size:1.25rem;letter-spacing:-.01em}
+.bb .ask{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);counter-reset:ask}
+.bb .ask li{counter-increment:ask;display:grid;grid-template-columns:3rem 1fr;gap:2px 12px;padding:18px 0;border-bottom:1px solid var(--line);margin:0}
+.bb .ask li::before{content:counter(ask);grid-row:span 2;font-family:var(--f-head);font-weight:800;font-size:2rem;line-height:1;color:var(--sea)}
+.bb .ask span{color:var(--mute)}
+.bb .ask a{color:var(--sea);font-weight:600}
+.bb .social{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid #E6F1F0}
+.bb .social li{margin:0;border-bottom:1px solid rgba(230,241,240,.25)}
+.bb .social a{display:flex;justify-content:space-between;gap:16px;padding:16px 0;font-weight:600;text-decoration:none;color:#fff}
+.bb .social a span{font-weight:400;color:#B7D0D6}
+.bb .social a:hover span{color:var(--sun)}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -161,6 +181,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .stats{grid-template-columns:1fr 1fr}
 .bb .lede .stats{grid-column:auto}
 .bb .reviews{grid-template-columns:1fr}
+.bb .ways{grid-template-columns:1fr}
+.bb .lede .ask{margin-top:10px}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}

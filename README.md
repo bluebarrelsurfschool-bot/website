@@ -65,7 +65,8 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
 | About | `about.html` | Built; confirm whether Jack is the only instructor |
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
-| Contact Us, The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
+| Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
+| The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
 page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
@@ -82,6 +83,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Our Locations | `our-surf-lesson-locations` | Our Locations | Surf Lesson Locations in Cornwall \| Blue Barrel Surf School | Private surf lessons at Newquay's South Fistral, Gwithian and Porthkidney in St Ives Bay, Perran Sands, Marazion, Perranuthnoe and Praa Sands. |
 | Group Surf Lessons | `group-surf-lessons-cornwall` | Group Lessons | Group Surf Lessons in Cornwall \| Stag, Hen & Team Days | Private group surf lessons in Cornwall for stag and hen parties, corporate team days and birthdays. Up to 16 people, all kit included, no experience needed. |
 | About | `about` | About | About Blue Barrel \| Private Surf Coach in Cornwall | Meet Jack, founder of Blue Barrel Surf School: ISA-qualified, RLSS lifeguard trained and insured, offering private mobile surf lessons across Cornwall. |
+| Contact Us | `contact-us` | Contact | Contact Blue Barrel Surf School \| Surf Lessons Cornwall | Call 07572 526698 or email Blue Barrel Surf School about private surf lessons, group bookings and gift vouchers in Cornwall, or book your lesson online. |
 
 ## Working notes for the next session
 
