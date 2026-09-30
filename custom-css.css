@@ -45,6 +45,12 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .facts{display:flex;gap:28px;flex-wrap:wrap;padding:36px 0 34px;font-size:.95rem;color:#D3E4E8}
 .bb .facts span{border-left:3px solid var(--sun);padding-left:10px}
 
+/* hero.fit: shows the whole photo on desktop, with a blurred copy filling the sides */
+.bb .hero.fit{overflow:hidden}
+.bb .hero.fit > img.fill{filter:blur(28px) brightness(.55);transform:scale(1.15)}
+@media (min-width:761px){.bb .hero.fit > img:not(.fill){object-fit:contain}}
+@media (max-width:760px){.bb .hero.fit > img.fill{display:none}}
+
 /* ruled lists */
 .bb .ruled{border-top:2px solid var(--ink)}
 
