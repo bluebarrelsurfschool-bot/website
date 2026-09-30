@@ -19,7 +19,7 @@ Work happens on branch `claude/blue-barrel-redesign-twaojg`.
 ## Design rules
 
 - Colours (CSS variables on `.bb`): ink #0A2A3B, mute #4A6472, line #B9CFD0, sea #0F5C7A, deep #082638,
-  sun #FFC24A (buttons), panel #DCEBEA, bg #EAF2F1, h1 #F15A29 (orange).
+  sun #FFC24A (buttons), panel #DCEBEA, bg #EAF2F1, h1 #FFFFFF (white; was orange #F15A29).
 - Headings h1–h3 use the site's own font `'Blue'` (Hello-Handmade Sans, loaded by an `@font-face` already in
   the user's Custom CSS). It's weight 400 only, and the font renders in capitals. Sentence case in the HTML.
 - Body: Figtree 17px. Extra display text (price figure, FAQ questions): Bricolage Grotesque 800.

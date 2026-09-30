@@ -4,7 +4,7 @@
    Squarespace Custom CSS is processed as LESS, so calc() and min() are wrapped in ~"..." on purpose. */
 
 /* ---- shared base ---- */
-.bb{--ink:#0A2A3B;--mute:#4A6472;--line:#B9CFD0;--sea:#0F5C7A;--deep:#082638;--sun:#FFC24A;--panel:#DCEBEA;--bg:#EAF2F1;--h1:#F15A29;--bb-pull:0px;
+.bb{--ink:#0A2A3B;--mute:#4A6472;--line:#B9CFD0;--sea:#0F5C7A;--deep:#082638;--sun:#FFC24A;--panel:#DCEBEA;--bg:#EAF2F1;--h1:#FFFFFF;--bb-pull:0px;
 --f-h1:'Blue',var(--heading-font-font-family,'Bricolage Grotesque'),Georgia,serif;
 --f-head:'Bricolage Grotesque',Georgia,serif;--f-body:Figtree,system-ui,sans-serif;
 margin-top:calc(~"-1 * (var(--bb-pull) + var(--bb-auto, 0px))");width:100vw;margin-left:calc(~"50% - 50vw");overflow-x:clip;background:var(--bg);color:var(--ink);
