@@ -67,8 +67,10 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
 | Contact Us, The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
 
-Open items: the user is building on test pages and will swap slugs later (move the old page to
-`surf-lessons-old`, set the new page's slug, add a 301 from `/test`). Hayle as the base town in the schema isn't confirmed.
+Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
+page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
+the test URL in URL Mappings. The homepage is swapped with "Set as homepage". An Instagram Block can sit in its own section below the
+home Code Block if the user wants the live feed. Hayle as the base town in the schema isn't confirmed.
 Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Praa Sands.
 
 ## SEO settings per page (Squarespace: page gear icon > General and SEO)
@@ -80,3 +82,17 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Our Locations | `our-surf-lesson-locations` | Our Locations | Surf Lesson Locations in Cornwall \| Blue Barrel Surf School | Private surf lessons at Newquay's South Fistral, Gwithian and Porthkidney in St Ives Bay, Perran Sands, Marazion, Perranuthnoe and Praa Sands. |
 | Group Surf Lessons | `group-surf-lessons-cornwall` | Group Lessons | Group Surf Lessons in Cornwall \| Stag, Hen & Team Days | Private group surf lessons in Cornwall for stag and hen parties, corporate team days and birthdays. Up to 16 people, all kit included, no experience needed. |
 | About | `about` | About | About Blue Barrel \| Private Surf Coach in Cornwall | Meet Jack, founder of Blue Barrel Surf School: ISA-qualified, RLSS lifeguard trained and insured, offering private mobile surf lessons across Cornwall. |
+
+## Working notes for the next session
+
+- This environment can't fetch bluebarrelsurf.co.uk or static1.squarespace.com, and it can't load images from
+  images.squarespace-cdn.com either. The user uploads each current page saved as "Webpage, HTML only". Extract the text,
+  links and image URLs from `<main>` with a small Python script.
+- Build each page as `<slug>.html`, reusing the shared header script and business schema from `surf-lessons.html`, and generate
+  the FAQPage JSON-LD from the page's own `<details>`. Add any new CSS to `custom-css.css`, compile it with both LESS versions,
+  render it in Playwright (Chromium at /opt/pw-browsers/chromium) at 390px and 1280px, then send the user the page file and,
+  if it changed, custom-css.css. The user replaces the whole Blue Barrel section in Custom CSS each time.
+- Hero headings are white (`--h1`). `.hero.fit` (plus an `img.fill` copy) shows the whole photo on desktop; it's used on About.
+- Reviews on Home are real customer quotes (Harley, Richard, Tom, Edward). Keep their wording and fix only spelling.
+- Keep Squarespace in mind: every Code Block sits alone in its own section, and scripts don't run inside the editor.
+- Give the SEO title (60 characters or fewer) and description (about 150–160 characters) for every page, and add them to the table above.
