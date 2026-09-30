@@ -1,3 +1,0 @@
-/* BLUE BARREL: heading font, paste once into Website > Website Tools > Custom CSS.
-   Replace the URL with your uploaded font file's link (see instructions). */
-@font-face{font-family:'BB Handmade';src:url(PASTE-FONT-URL-HERE) format('woff2');font-weight:400;font-style:normal;font-display:swap}
