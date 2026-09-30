@@ -1,6 +1,6 @@
 <!-- BLUE BARREL: SURF LESSONS PAGE
      Paste into ONE Code Block (untick "Display Source") on your Surf Lessons page.
-     Fonts: Hello-Handmade Sans (h1, loaded by your site) + Bricolage Grotesque + Figtree.
+     Fonts: Hello-Handmade Sans (headings, loaded by your site) + Bricolage Grotesque + Figtree.
      The script pulls the page flush under the site header. To lift it further, raise --bb-pull (e.g. 40px) on .bb below.
      Scripts don't run in the Squarespace editor: check the live page or Preview. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
 --f-head:'Bricolage Grotesque',Georgia,serif;--f-body:Figtree,system-ui,sans-serif;
 margin-top:calc(-1 * (var(--bb-pull) + var(--bb-auto,0px)));width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body);text-align:left}
 .bb *,.bb *::before,.bb *::after{box-sizing:border-box}
-.bb h1,.bb h2,.bb h3{font-family:var(--f-head)!important;font-weight:800!important;line-height:1.02!important;letter-spacing:-.02em!important;text-transform:none!important;margin:0!important;color:inherit}
+.bb h1,.bb h2,.bb h3{font-family:var(--f-h1)!important;font-weight:400!important;font-synthesis:none;line-height:1.02!important;letter-spacing:0!important;text-transform:none!important;margin:0!important;color:inherit}
 .bb h2{font-size:clamp(2rem,5vw,3.2rem)!important}
 .bb h3{font-size:1.5rem!important}
 .bb p{margin:0 0 1em;max-width:62ch;font-size:17px;line-height:1.6;color:inherit}
@@ -35,7 +35,7 @@ margin-top:calc(-1 * (var(--bb-pull) + var(--bb-auto,0px)));width:100vw;margin-l
 .bb .hero>img{position:absolute;inset:0;z-index:0}
 .bb .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,38,56,.25) 0%,rgba(8,38,56,.88) 100%);z-index:1}
 .bb .hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:0;width:100%}
-.bb .hero h1{font-family:var(--f-h1)!important;font-weight:400!important;font-synthesis:none;letter-spacing:0!important;line-height:.98!important;color:var(--h1)!important;font-size:clamp(3rem,10vw,7rem)!important;max-width:11ch;margin-bottom:20px!important}
+.bb .hero h1{line-height:.98!important;color:var(--h1)!important;font-size:clamp(3rem,10vw,7rem)!important;max-width:11ch;margin-bottom:20px!important}
 .bb .hero p{font-size:1.2rem;color:#D3E4E8}
 .bb .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
 .bb .facts{display:flex;gap:28px;flex-wrap:wrap;padding:36px 0 34px;font-size:.95rem;color:#D3E4E8}
