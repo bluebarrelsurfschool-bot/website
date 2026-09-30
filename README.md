@@ -106,6 +106,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
   the FAQPage JSON-LD from the page's own `<details>`. Add any new CSS to `custom-css.css`, compile it with both LESS versions,
   render it in Playwright (Chromium at /opt/pw-browsers/chromium) at 390px and 1280px, then send the user the page file and,
   if it changed, custom-css.css. The user replaces the whole Blue Barrel section in Custom CSS each time.
+- Surf Lessons has a Blueprint banner (`.bpr`) in the Blueprint's own royal blue #1F4CA0, with a grid, the wordmark and the white wave drawing as inline SVG (traced from the owner's Blueprint PDF). A small script sizes the wordmark so BLUEPRINT fills the grid width in whatever font loads.
 - Hero headings are white (`--h1`). `.hero.fit` (plus an `img.fill` copy) shows the whole photo on desktop; it's used on About.
 - The live site has a mailto typo `bluebarrelsurfschool@gmai.com` (header/footer, outside the Code Blocks); the owner should fix it.
 - Reviews on Home are real customer quotes (Harley, Richard, Tom, Edward). Keep their wording and fix only spelling.

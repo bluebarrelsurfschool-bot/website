@@ -236,6 +236,21 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .t-bot .btn{display:block;text-align:center;padding-left:1em;padding-right:1em}
 .bb .tickets + .note{margin-top:22px}
 
+/* ---- blueprint banner (surf lessons) ---- */
+.bb .bpr{--bpr:#1F4CA0;--grid:rgba(255,255,255,.3);background:var(--bpr);color:#fff}
+.bb .bpr .bpr-word{position:relative;overflow:hidden;padding:0!important;border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);background-image:linear-gradient(to right,var(--grid) 1px,transparent 1px),linear-gradient(to bottom,var(--grid) 1px,transparent 1px);background-size:12.5% 25%;color:#fff;aspect-ratio:2.4}
+.bb .bpr .bpr-word{display:grid;grid-template-rows:1fr 1fr}
+.bb .bpr-row{display:flex;align-items:flex-end;justify-content:space-between;gap:4%;min-height:0;padding:0 0 1px}
+.bb .bpr .w{display:block;font-family:var(--f-h1);font-size:clamp(2.4rem,11vw,8rem);line-height:.8;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.bb .bpr-wave{display:block;width:31%;height:auto;max-height:100%;color:#fff}
+.bb .bpr .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bb .bpr-body{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;margin-top:40px}
+.bb .bpr-lead{font-family:var(--f-head);font-weight:800;font-size:1.5rem;line-height:1.2;margin:0 0 12px}
+.bb .bpr p{color:#fff}
+.bb .bpr .tags{margin:18px 0 0}
+.bb .bpr .tags li{border-color:rgba(255,255,255,.65);background:rgba(255,255,255,.1);color:#fff}
+.bb .bpr .cta{margin:0;justify-content:flex-end}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -260,6 +275,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .pk{padding-bottom:30px}
 .bb .steps b{font-size:2rem}
 .bb .tickets{grid-template-columns:1fr}
+.bb .bpr-body{grid-template-columns:1fr;gap:10px;margin-top:28px}
+.bb .bpr .cta{justify-content:flex-start}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
