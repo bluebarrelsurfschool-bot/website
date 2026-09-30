@@ -1,0 +1,260 @@
+<!-- BLUE BARREL: SURF LESSONS PAGE
+     Paste into ONE Code Block (untick "Display Source") on your Surf Lessons page.
+     Fonts: Hello-Handmade Sans (h1, loaded by your site) + Bricolage Grotesque + Figtree.
+     The script pulls the page flush under the site header. To lift it further, raise --bb-pull (e.g. 40px) on .bb below.
+     Scripts don't run in the Squarespace editor: check the live page or Preview. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+.bb{--ink:#0A2A3B;--mute:#4A6472;--line:#B9CFD0;--sea:#0F5C7A;--deep:#082638;--sun:#FFC24A;--panel:#DCEBEA;--bg:#EAF2F1;--h1:#F15A29;--bb-pull:0px;
+--f-h1:'Hello-Handmade Sans','Hello Handmade Sans',HelloHandmadeSansRegular,var(--heading-font-font-family,'Bricolage Grotesque'),Georgia,serif;
+--f-head:'Bricolage Grotesque',Georgia,serif;--f-body:Figtree,system-ui,sans-serif;
+margin-top:calc(-1 * (var(--bb-pull) + var(--bb-auto,0px)));width:100vw;margin-left:calc(50% - 50vw);overflow-x:clip;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--f-body);text-align:left}
+.bb *,.bb *::before,.bb *::after{box-sizing:border-box}
+.bb h1,.bb h2,.bb h3{font-family:var(--f-head)!important;font-weight:800!important;line-height:1.02!important;letter-spacing:-.02em!important;text-transform:none!important;margin:0!important;color:inherit}
+.bb h2{font-size:clamp(2rem,5vw,3.2rem)!important}
+.bb h3{font-size:1.5rem!important}
+.bb p{margin:0 0 1em;max-width:62ch;font-size:17px;line-height:1.6;color:inherit}
+.bb a{color:inherit}
+.bb :focus-visible{outline:3px solid var(--sea);outline-offset:3px}
+.bb .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.bb .btn{display:inline-block;background:var(--sun);color:var(--ink)!important;font-weight:600;text-decoration:none!important;padding:.85em 1.6em;border-radius:99px;transition:transform .15s}
+.bb .btn:hover{transform:translateY(-2px)}
+.bb .btn.ghost{background:none;color:inherit!important;border:2px solid currentColor}
+.bb section{padding:clamp(56px,9vw,104px) 0}
+.bb img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* remove Squarespace's own section spacing around this block */
+.page-section:has(.bb),section:has(>.content-wrapper .bb){padding-top:0!important;padding-bottom:0!important;min-height:0!important}
+.page-section:has(.bb) .content-wrapper{padding:0!important;max-width:none!important}
+.page-section:has(.bb) .fluid-engine{row-gap:0!important;padding:0!important}
+.sqs-block:has(.bb){padding:0!important}
+
+/* hero */
+.bb .hero{position:relative;color:#E6F1F0;background:var(--deep);padding:0;min-height:min(86vh,720px);display:flex;align-items:flex-end}
+.bb .hero>img{position:absolute;inset:0;z-index:0}
+.bb .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,38,56,.25) 0%,rgba(8,38,56,.88) 100%);z-index:1}
+.bb .hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:0;width:100%}
+.bb .hero h1{font-family:var(--f-h1)!important;font-weight:400!important;font-synthesis:none;letter-spacing:0!important;line-height:.98!important;color:var(--h1)!important;font-size:clamp(3rem,10vw,7rem)!important;max-width:11ch;margin-bottom:20px!important}
+.bb .hero p{font-size:1.2rem;color:#D3E4E8}
+.bb .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.bb .facts{display:flex;gap:28px;flex-wrap:wrap;padding:36px 0 34px;font-size:.95rem;color:#D3E4E8}
+.bb .facts span{border-left:3px solid var(--sun);padding-left:10px}
+
+/* intro */
+.bb .lede{display:grid;grid-template-columns:1fr 1.2fr;gap:40px}
+
+/* levels */
+.bb .levels{margin-top:36px;border-top:2px solid var(--ink)}
+.bb .lv{display:grid;grid-template-columns:220px 1fr 2fr;gap:12px 36px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.bb .lv .ph{height:150px;border-radius:14px;overflow:hidden}
+.bb .lv p{margin:0;color:var(--mute)}
+
+/* pricing */
+.bb .price{background:var(--panel)}
+.bb .calc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:34px}
+.bb .big{font:800 clamp(4.5rem,14vw,9rem)/.9 var(--f-head);letter-spacing:-.04em;color:var(--sea)}
+.bb .big small{display:block;font:600 1.05rem var(--f-body);letter-spacing:0;color:var(--mute);margin:12px 0 0 4px}
+.bb input[type=range]{width:100%;accent-color:var(--sea);height:36px;margin:6px 0 0;padding:0;background:none;border:0}
+.bb .ticks{display:flex;justify-content:space-between;color:var(--mute);font-size:.85rem}
+.bb .total{margin:16px 0!important;font-size:1.1rem}
+.bb .incl{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.bb .incl li,.bb .beaches li{border:1.5px solid var(--sea);color:var(--sea);border-radius:99px;padding:.25em .9em;font-weight:600;font-size:.95rem;margin:0}
+.bb .tbl{overflow-x:auto;margin-top:30px}
+.bb table{border-collapse:collapse;width:100%;min-width:480px;font-size:.95rem;border:0;border-top:2px solid var(--ink)}
+.bb th,.bb td{padding:10px 12px;text-align:left;border:0;border-bottom:1px solid var(--line);color:inherit;background:none}
+.bb thead th{font-weight:600}
+.bb tr.on td,.bb tr.on th{background:var(--sun);color:var(--ink);font-weight:600}
+.bb .note{font-size:.9rem;color:var(--mute);margin:14px 0 0}
+
+/* blueprint */
+.bb .bp{background:var(--sea);color:#fff}
+.bb .bp .wrap{display:flex;gap:30px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.bb .bp p{color:#DDF0F4;margin:12px 0 0}
+.bb .bp .btn{background:#fff}
+
+/* locations */
+.bb .when{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.bb .when .ph{height:280px;border-radius:14px;overflow:hidden;margin-bottom:22px}
+.bb .slot{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.bb .slot:first-child{border-top:2px solid var(--ink)}
+.bb .slot span{color:var(--mute);text-align:right}
+.bb .beaches{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+
+/* faq */
+.bb details{border-bottom:1px solid var(--line);padding:18px 0}
+.bb details:first-of-type{border-top:2px solid var(--ink)}
+.bb summary{cursor:pointer;font:800 1.2rem var(--f-head);list-style:none;display:flex;justify-content:space-between;gap:20px}
+.bb summary::-webkit-details-marker{display:none}
+.bb summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--sea)}
+.bb details[open] summary::after{content:"\2212"}
+.bb details p{margin:12px 0 0;color:var(--mute)}
+
+/* gift */
+.bb .gift{background:var(--deep);color:#E6F1F0}
+.bb .gift p{color:#B7D0D6}
+
+@media(max-width:760px){
+.bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
+.bb .lv{grid-template-columns:1fr}
+.bb .lv .ph{height:200px}
+}
+@media(prefers-reduced-motion:no-preference){.bb .hero h1{animation:bbrise .8s ease-out both}@keyframes bbrise{from{opacity:0;transform:translateY(24px)}}}
+@media(prefers-reduced-motion:reduce){.bb .btn{transition:none}.bb .btn:hover{transform:none}}
+</style>
+
+<div class="bb">
+
+<div class="hero">
+<img src="https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/218eb529-d58e-4274-ad21-51bdd86e71b7/Blue-Barrel-1S3A9774.jpg?format=1500w" alt="Surfers carrying surfboards on a Cornish beach before a surf lesson in Cornwall" loading="eager">
+<div class="wrap">
+<h1>Private surf lessons in Cornwall</h1>
+<p>Two-hour lessons for beginners, improvers and families. We pick the best beach each morning, so you get the right waves for your level.</p>
+<div class="cta"><a class="btn" href="https://app.vikingbookings.com/widget/booking/b401000001000000e56b5529">Book a lesson</a><a class="btn ghost" href="#bb-price">See prices</a></div>
+<div class="facts"><span>Private, from £100</span><span>All equipment included</span><span>Year-round, from age 5</span></div>
+</div>
+</div>
+
+<section>
+<div class="wrap lede">
+<h2>Private surf coaching built around your progress</h2>
+<div>
+<p>Blue Barrel is a mobile surf school working across Cornwall's north and south coasts. Every lesson is private, so the coaching is about you and the people you came with, not a crowd of strangers.</p>
+<p>Our ISA-qualified instructors have earned more than 75 five-star reviews, and most first-timers stand up in their first session.</p>
+<p>Bringing children? They're welcome from age 5, as long as a parent or guardian stays in the water with them. We coach you both.</p>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2>Surf lessons for every level</h2>
+<div class="levels">
+<div class="lv"><div class="ph"><img src="https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/8e4d227d-6277-4dc6-a09b-f2e499752a95/Blue-Barrel-1S3A9313.jpg?format=1000w" alt="Beginner surf lesson practising pop-ups on the sand in Cornwall" loading="lazy"></div><h3>Beginner surf lessons</h3><p>We start from scratch with board control, paddling and pop-up technique on the sand, then take it into the white water. Most first-timers stand up in their first session.</p></div>
+<div class="lv"><div class="ph"><img src="https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/0da1d235-1dbe-4001-8c8f-62309bb9faed/Blue-Barrel-1S3A9449.jpg?format=1000w" alt="Surf instructor explaining unbroken waves to an improver in Cornwall" loading="lazy"></div><h3>Improver and intermediate coaching</h3><p>Comfortable in the white water? We work on green waves, paddling out, reading waves and the basics of turning, with the honest feedback only a private lesson can give.</p></div>
+<div class="lv"><div class="ph"><img src="https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/8514eca3-7172-4abb-94ee-b3c948084020/Blue-Barrel-1S3A9568.jpg?format=1000w" alt="Family riding an unbroken wave together during a family surf lesson in Cornwall" loading="lazy"></div><h3>Family surf lessons</h3><p>Sessions shaped so everyone gets something from them, from nervous kids to returning adults. Children are welcome from age 5 with a parent or guardian in the water.</p></div>
+</div>
+</div>
+</section>
+
+<section class="price" id="bb-price">
+<div class="wrap">
+<h2>Private surf lesson prices</h2>
+<p style="margin-top:14px">A private 2-hour lesson is £100 for one surfer. Each extra person adds £30, up to 8 in a group, so the more of you there are, the less it costs each.</p>
+<ul class="incl"><li>2 hours in the water</li><li>Wetsuit and board</li><li>ISA-qualified instructor</li><li>Beach picked for the conditions</li></ul>
+<div class="calc">
+<div>
+<label for="bb-n" style="font-weight:600">How many people are surfing?</label>
+<input id="bb-n" type="range" min="1" max="8" value="2" aria-valuetext="2 people">
+<div class="ticks" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+<p class="total" id="bb-total" aria-live="polite">That's £65 each for a 2-hour private lesson.</p>
+<a class="btn" href="https://app.vikingbookings.com/widget/booking/b401000001000000e56b5529">Book for <span id="bb-bn">2 people</span></a>
+</div>
+<div class="big" id="bb-big">£130<small>total for 2 people</small></div>
+</div>
+<div class="tbl"><table>
+<caption class="note" style="caption-side:bottom;text-align:left">You pay the total price. Per-person figures are rounded to the nearest pound.</caption>
+<thead><tr><th scope="col">Group size</th><th scope="col">Total price</th><th scope="col">Per person</th></tr></thead>
+<tbody id="bb-rows">
+<tr data-n="1" data-t="100" data-pp="100"><th scope="row">1 person</th><td>£100</td><td>£100</td></tr>
+<tr data-n="2" data-t="130" data-pp="65" class="on"><th scope="row">2 people</th><td>£130</td><td>£65</td></tr>
+<tr data-n="3" data-t="160" data-pp="53"><th scope="row">3 people</th><td>£160</td><td>£53</td></tr>
+<tr data-n="4" data-t="190" data-pp="48"><th scope="row">4 people</th><td>£190</td><td>£48</td></tr>
+<tr data-n="5" data-t="220" data-pp="44"><th scope="row">5 people</th><td>£220</td><td>£44</td></tr>
+<tr data-n="6" data-t="250" data-pp="42"><th scope="row">6 people</th><td>£250</td><td>£42</td></tr>
+<tr data-n="7" data-t="280" data-pp="40"><th scope="row">7 people</th><td>£280</td><td>£40</td></tr>
+<tr data-n="8" data-t="310" data-pp="39"><th scope="row">8 people</th><td>£310</td><td>£39</td></tr>
+</tbody></table></div>
+<p class="note">More than 8, or booking for a school, club or work team? See our <a href="https://www.bluebarrelsurf.co.uk/group-surf-lessons-cornwall">group surf lessons in Cornwall</a>.</p>
+</div>
+</section>
+
+<section class="bp">
+<div class="wrap">
+<div><h2>Want a structured surf coaching programme?</h2><p>The Blueprint is private coaching with video analysis and a personal progression plan after every session.</p></div>
+<a class="btn" href="https://www.bluebarrelsurf.co.uk/the-blueprint">See how the Blueprint works</a>
+</div>
+</section>
+
+<section>
+<div class="wrap when">
+<div>
+<div class="ph"><img src="https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/82d87b79-3fb2-4da9-b19b-dab17d997180/Blue-Barrel-1S3A9410.jpg?format=1000w" alt="Surf lesson group holding surfboards on a beach in Cornwall" loading="lazy"></div>
+<h2>Surf lesson locations and times</h2>
+<p style="margin-top:14px">Choose your beach when you book. If you're not sure, we'll pick the safest and most suitable spot for your level on the day.</p>
+<ul class="beaches"><li>South Fistral</li><li>St Ives Bay (Gwithian and Porthkidney)</li><li>Perran Sands</li><li>Marazion</li><li>Perranuthnoe</li><li>Praa Sands</li></ul>
+<a class="btn ghost" href="https://www.bluebarrelsurf.co.uk/our-surf-lesson-locations">See all surf lesson locations</a>
+</div>
+<div style="padding-top:8px">
+<div class="slot"><b>Winter, Nov to Mar</b><span>10am, 1pm</span></div>
+<div class="slot"><b>Summer, Apr to Oct</b><span>10am, 1pm, 4pm<br>optional 6pm sunset lesson</span></div>
+<p style="margin-top:18px;color:var(--mute)">Need a different start time? <a href="mailto:bluebarrelsurfschool@gmail.com">Email us</a> or call <a href="tel:+447572526698">07572 526698</a> and we'll do our best to fit your schedule.</p>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2 style="margin-bottom:30px!important">Surf lesson questions</h2>
+<details><summary>How much does a surf lesson cost?</summary><p>A private 2-hour lesson is £100 for one person. Each extra surfer adds £30, so 2 people pay £130 in total (£65 each) and 4 people pay £190 (about £48 each). All equipment is included.</p></details>
+<details><summary>What if the surf is poor on the day?</summary><p>We're mobile, so we move to whichever Cornwall beach has the best conditions for your ability. If every location is genuinely unsuitable, we'll work with you to reschedule.</p></details>
+<details><summary>Do I need to bring anything?</summary><p>Just your swimwear and a towel. Your lesson includes a wetsuit, surfboard and all accessories.</p></details>
+<details><summary>How fit do I need to be?</summary><p>You don't need to be athletic. You need basic fitness and to be able to swim at least 25 metres comfortably. Lessons run for 2 hours.</p></details>
+<details><summary>Can my children join?</summary><p>Yes. Children can join from age 5, as long as a parent or guardian is in the water with them throughout.</p></details>
+<details><summary>What times do lessons start?</summary><p>From November to March, lessons start at 10am and 1pm. From April to October, they start at 10am, 1pm and 4pm, with an optional 6pm sunset lesson.</p></details>
+<details><summary>Where do lessons take place?</summary><p>Across Cornwall's north and south coasts: South Fistral in Newquay, St Ives Bay (Gwithian and Porthkidney), Perran Sands, Marazion, Perranuthnoe and Praa Sands.</p></details>
+</div>
+</section>
+
+<section class="gift">
+<div class="wrap">
+<h2>Surf lesson gift vouchers</h2>
+<p style="margin-top:14px">Physical or digital gift cards for birthdays, Christmas or anyone who'd love to try surfing. They buy the voucher now and pick the date later.</p>
+<a class="btn" href="https://www.bluebarrelsurf.co.uk/gift-vouchers">Buy a surf lesson gift voucher</a>
+</div>
+</section>
+
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"SportsActivityLocation","@id":"https://www.bluebarrelsurf.co.uk/#business","name":"Blue Barrel Surf School","url":"https://www.bluebarrelsurf.co.uk","email":"bluebarrelsurfschool@gmail.com","telephone":"+447572526698","image":"https://images.squarespace-cdn.com/content/v1/64ea4b114e8ebf6aced48b0e/218eb529-d58e-4274-ad21-51bdd86e71b7/Blue-Barrel-1S3A9774.jpg","description":"Mobile surf school offering private 2-hour surf lessons across Cornwall with ISA-qualified instructors. All equipment included.","priceRange":"£100–£310 per lesson","address":{"@type":"PostalAddress","addressRegion":"Cornwall","addressCountry":"GB"},"areaServed":[{"@type":"Place","name":"South Fistral, Newquay"},{"@type":"Place","name":"Gwithian, St Ives Bay"},{"@type":"Place","name":"Porthkidney, St Ives Bay"},{"@type":"Place","name":"Perran Sands"},{"@type":"Place","name":"Marazion"},{"@type":"Place","name":"Perranuthnoe"},{"@type":"Place","name":"Praa Sands"}],"sameAs":["https://www.instagram.com/bluebarrelsurf/","https://www.tiktok.com/@bluebarrelsurf"],
+"makesOffer":{"@type":"Offer","name":"Private 2-hour surf lesson","price":"100","priceCurrency":"GBP","url":"https://www.bluebarrelsurf.co.uk/surf-lessons","description":"£100 for one person, plus £30 for each extra person up to 8."}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does a surf lesson cost?","acceptedAnswer":{"@type":"Answer","text":"A private 2-hour lesson is £100 for one person. Each extra surfer adds £30, so 2 people pay £130 in total (£65 each) and 4 people pay £190 (about £48 each). All equipment is included."}},
+{"@type":"Question","name":"What if the surf is poor on the day?","acceptedAnswer":{"@type":"Answer","text":"We're mobile, so we move to whichever Cornwall beach has the best conditions for your ability. If every location is genuinely unsuitable, we'll work with you to reschedule."}},
+{"@type":"Question","name":"Do I need to bring anything?","acceptedAnswer":{"@type":"Answer","text":"Just your swimwear and a towel. Your lesson includes a wetsuit, surfboard and all accessories."}},
+{"@type":"Question","name":"How fit do I need to be?","acceptedAnswer":{"@type":"Answer","text":"You don't need to be athletic. You need basic fitness and to be able to swim at least 25 metres comfortably. Lessons run for 2 hours."}},
+{"@type":"Question","name":"Can my children join?","acceptedAnswer":{"@type":"Answer","text":"Yes. Children can join from age 5, as long as a parent or guardian is in the water with them throughout."}},
+{"@type":"Question","name":"What times do lessons start?","acceptedAnswer":{"@type":"Answer","text":"From November to March, lessons start at 10am and 1pm. From April to October, they start at 10am, 1pm and 4pm, with an optional 6pm sunset lesson."}},
+{"@type":"Question","name":"Where do lessons take place?","acceptedAnswer":{"@type":"Answer","text":"Across Cornwall's north and south coasts: South Fistral in Newquay, St Ives Bay (Gwithian and Porthkidney), Perran Sands, Marazion, Perranuthnoe and Praa Sands."}}
+]}
+]}
+</script>
+
+<script>
+(function(){
+var bb=document.querySelector('.bb');if(!bb)return;
+/* pull the page flush under the site header */
+function flush(){
+if(document.body.classList.contains('sqs-edit-mode'))return;
+bb.style.setProperty('--bb-auto','0px');
+var h=document.querySelector('#header, header.header'),hb=0;
+if(h){var r=h.getBoundingClientRect(),p=getComputedStyle(h).position;hb=(p==='fixed'||p==='sticky')?r.bottom:r.bottom+window.scrollY;}
+var gap=bb.getBoundingClientRect().top+window.scrollY-hb;
+if(gap>0&&gap<400)bb.style.setProperty('--bb-auto',gap+'px');}
+flush();window.addEventListener('load',flush);window.addEventListener('resize',flush);
+
+/* price slider: reads prices from the table above */
+var n=document.getElementById('bb-n'),rows=document.getElementById('bb-rows');
+if(!n||!rows)return;
+function up(){var v=+n.value,tr=rows.querySelector('tr[data-n="'+v+'"]');if(!tr)return;
+var t=+tr.dataset.t,pp=+tr.dataset.pp,exact=(t/v===pp),who=v+(v==1?' person':' people');
+document.getElementById('bb-big').innerHTML='£'+t+'<small>total for '+who+'</small>';
+document.getElementById('bb-total').textContent=v==1?'A 2-hour private lesson, just for you.':"That's "+(exact?'':'about ')+'£'+pp+' each for a 2-hour private lesson.';
+document.getElementById('bb-bn').textContent=who;
+n.setAttribute('aria-valuetext',who);
+[].forEach.call(rows.children,function(r){r.className=(+r.dataset.n===v)?'on':''});}
+n.addEventListener('input',up);up();
+})();
+</script>
