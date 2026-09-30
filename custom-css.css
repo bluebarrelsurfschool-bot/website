@@ -116,6 +116,11 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .steps p{margin:0;color:var(--mute)}
 .bb .dark a:not(.btn){color:#fff}
 
+/* ---- group lessons page ---- */
+.bb .big.q{font-size:clamp(3rem,9vw,5.5rem)}
+.bb .price .tbl a{font-weight:600;color:var(--sea)}
+.bb .price tr.on a{color:var(--ink)}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
