@@ -1,0 +1,44 @@
+/* Custom Fonts - Squarespace CDN */
+@font-face {
+  font-family: 'Blue';
+  src: url("https://static1.squarespace.com/static/64ea4b114e8ebf6aced48b0e/t/68a4c65984fd2b580ef7c0d3/1755629145174/Blue.woff2") format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bluesmall';
+  src: url("https://static1.squarespace.com/static/64ea4b114e8ebf6aced48b0e/t/68a4c65984fd2b580ef7c0d3/1755629145174/Blue.woff2") format('woff2');
+  font-display: swap;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Blue', sans-serif;
+  font-size: 40pt;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Blue', sans-serif !important;
+  font-size: 40pt !important;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'bluesmall', sans-serif;
+  font-size: 20pt;
+  line-height: 145%;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+/* Body text */
+body {
+  font-family: 'Blue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

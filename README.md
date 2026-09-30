@@ -11,6 +11,10 @@ Work happens on branch `claude/blue-barrel-redesign-twaojg`.
   and the user replaces the whole section.
 - **One `.html` file per page**, pasted into a single Code Block (HTML mode, Display Source unticked),
   alone in its own Squarespace section. It holds only the Google Fonts link, the markup, JSON-LD and scripts.
+- **`site-custom-css.css`** is the user's own Custom CSS (the `Blue`/`bluesmall` `@font-face` rules and the site-wide
+  h1–h3 and body font rules). It sits at the TOP of the Custom CSS box, above the Blue Barrel section. The whole box is
+  `site-custom-css.css` followed by `custom-css.css`; when sending a full replacement, send both joined in that order,
+  never `custom-css.css` alone (that once wiped the site's fonts).
 - **Don't put a `<style>` block in the page files.** It was lost every time the user pasted, which is why
   all styling moved to Custom CSS.
 - Squarespace Custom CSS is compiled as LESS. Wrap `calc()` and `min()` in `~"..."`, use longhand
