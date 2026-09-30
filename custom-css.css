@@ -126,6 +126,12 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .loc.flip .ph{order:0}
 .bb .loc .ph{height:260px}
 .bb .steps li{grid-template-columns:3rem 1fr}
+.bb .hero{min-height:0}
+.bb .hero .wrap{padding-top:36px}
+.bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
+.bb .hero p{font-size:1.05rem;line-height:1.5}
+.bb .cta{margin-top:18px}
+.bb .facts{gap:10px 20px;padding:26px 0 28px}
 }
 @keyframes bbrise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:no-preference){.bb .hero h1{animation:bbrise .8s ease-out both}}
