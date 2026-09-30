@@ -70,3 +70,12 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 Open items: the user is building on test pages and will swap slugs later (move the old page to
 `surf-lessons-old`, set the new page's slug, add a 301 from `/test`). Hayle as the base town in the schema isn't confirmed.
 Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Praa Sands.
+
+## SEO settings per page (Squarespace: page gear icon > General and SEO)
+
+| Page | URL slug | Nav title | SEO title | SEO description |
+|---|---|---|---|---|
+| Surf Lessons | `surf-lessons` | Surf Lessons | Private Surf Lessons in Cornwall \| Blue Barrel Surf School | Private 2-hour surf lessons in Cornwall for beginners, improvers and families. £100 for one, plus £30 per extra surfer. All kit included. Book online. |
+| Our Locations | `our-surf-lesson-locations` | Our Locations | Surf Lesson Locations in Cornwall \| Blue Barrel Surf School | Private surf lessons at Newquay's South Fistral, Gwithian and Porthkidney in St Ives Bay, Perran Sands, Marazion, Perranuthnoe and Praa Sands. |
+| Group Surf Lessons | `group-surf-lessons-cornwall` | Group Lessons | Group Surf Lessons in Cornwall \| Stag, Hen & Team Days | Private group surf lessons in Cornwall for stag and hen parties, corporate team days and birthdays. Up to 16 people, all kit included, no experience needed. |
+| About | `about` | About | About Blue Barrel \| Private Surf Coach in Cornwall | Meet Jack, founder of Blue Barrel Surf School: ISA-qualified, RLSS lifeguard trained and insured, offering private mobile surf lessons across Cornwall. |
