@@ -145,14 +145,18 @@
 (function(){
 var bb=document.querySelector('.bb');if(!bb)return;
 /* sit the page flush under the site header: pulls it up if there's a gap, pushes it down if the header overlaps it */
+function headBottom(){var hb=0;
+[].forEach.call(document.querySelectorAll('#header,header,.header,.header-announcement-bar-wrapper,.header-inner'),function(e){
+if(bb.contains(e))return;var r=e.getBoundingClientRect();if(r.height<1||r.width<1)return;
+var fixed=false;for(var n=e;n&&n!==document.documentElement;n=n.parentElement){var ps=getComputedStyle(n).position;if(ps==='fixed'||ps==='sticky'){fixed=true;break;}}
+var off=fixed?0:window.scrollY;if(r.top+off>80)return;if(r.bottom+off>hb)hb=r.bottom+off;});
+return hb;}
 function flush(){
 if(document.body.classList.contains('sqs-edit-mode'))return;
 bb.style.setProperty('--bb-auto','0px');
-var h=document.querySelector('#header, header.header'),hb=0;
-if(h){var r=h.getBoundingClientRect(),p=getComputedStyle(h).position;hb=(p==='fixed'||p==='sticky')?r.bottom:r.bottom+window.scrollY;}
-var gap=bb.getBoundingClientRect().top+window.scrollY-hb;
+var gap=bb.getBoundingClientRect().top+window.scrollY-headBottom();
 if(Math.abs(gap)>1&&Math.abs(gap)<400)bb.style.setProperty('--bb-auto',gap+'px');}
-flush();window.addEventListener('load',flush);window.addEventListener('resize',flush);setTimeout(flush,600);
+flush();window.addEventListener('load',flush);window.addEventListener('resize',flush);setTimeout(flush,600);setTimeout(flush,1500);
 
 /* wind picker: reads beaches and winds from the table above */
 var btns=bb.querySelectorAll('.winds button'),rows=document.getElementById('bb-wrows'),res=document.getElementById('bb-wres');
