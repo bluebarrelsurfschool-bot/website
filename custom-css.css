@@ -251,6 +251,14 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .bpr .tags li{border-color:rgba(255,255,255,.65);background:rgba(255,255,255,.1);color:#fff}
 .bb .bpr .cta{margin:0;justify-content:flex-end}
 
+/* ---- hand-drawn illustrations (locations) ---- */
+.bb .doodle{display:block;height:auto;pointer-events:none}
+.bb .has-doodle{position:relative}
+.bb .doodle.van{width:260px;max-width:75%;margin-top:34px;color:var(--ink)}
+.bb .doodle.palm{position:absolute;right:30px;top:-40px;width:110px;color:var(--ink)}
+.bb .doodle.gulls{position:absolute;right:30px;top:-72px;width:230px;color:var(--lite)}
+.bb .has-doodle > h2{padding-right:150px}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -277,6 +285,10 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .tickets{grid-template-columns:1fr}
 .bb .bpr-body{grid-template-columns:1fr;gap:10px;margin-top:28px}
 .bb .bpr .cta{justify-content:flex-start}
+.bb .doodle.van{width:200px;margin-top:22px}
+.bb .doodle.palm{right:18px;top:-34px;width:62px}
+.bb .doodle.gulls{right:18px;top:-44px;width:120px}
+.bb .has-doodle > h2{padding-right:70px}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
