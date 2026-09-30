@@ -64,7 +64,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Our Locations | `our-surf-lesson-locations.html` | Live; beach wind directions still need owner's check |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
 | About | `about.html` | Built; confirm whether Jack is the only instructor |
-| Home | – | Redesigned earlier outside this repo |
+| Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
 | Contact Us, The Blueprint, Gift Vouchers, Blog, Terms | – | To do |
 
 Open items: the user is building on test pages and will swap slugs later (move the old page to
@@ -75,6 +75,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 
 | Page | URL slug | Nav title | SEO title | SEO description |
 |---|---|---|---|---|
+| Home | (homepage) | Home | Blue Barrel Surf School \| Private Surf Lessons in Cornwall | Cornwall's mobile private surf school. Tailored surf lessons for beginners to intermediates at Fistral, Gwithian and more. ISA-qualified, all kit included. |
 | Surf Lessons | `surf-lessons` | Surf Lessons | Private Surf Lessons in Cornwall \| Blue Barrel Surf School | Private 2-hour surf lessons in Cornwall for beginners, improvers and families. £100 for one, plus £30 per extra surfer. All kit included. Book online. |
 | Our Locations | `our-surf-lesson-locations` | Our Locations | Surf Lesson Locations in Cornwall \| Blue Barrel Surf School | Private surf lessons at Newquay's South Fistral, Gwithian and Porthkidney in St Ives Bay, Perran Sands, Marazion, Perranuthnoe and Praa Sands. |
 | Group Surf Lessons | `group-surf-lessons-cornwall` | Group Lessons | Group Surf Lessons in Cornwall \| Stag, Hen & Team Days | Private group surf lessons in Cornwall for stag and hen parties, corporate team days and birthdays. Up to 16 people, all kit included, no experience needed. |

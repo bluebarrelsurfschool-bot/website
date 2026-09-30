@@ -140,6 +140,14 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .creds{margin-top:26px}
 .bb .creds .slot:first-child{border-top:2px solid var(--ink)}
 
+/* ---- home page ---- */
+.bb .reviews{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;border-top:2px solid var(--ink);margin-top:30px}
+.bb .reviews figure{margin:0;padding:26px 0;border-bottom:1px solid var(--line)}
+.bb .reviews blockquote{margin:0!important;padding:0!important;border:0!important;background:none!important;font-family:var(--f-body)!important;font-style:normal!important;font-size:1.05rem!important;line-height:1.6!important;color:var(--ink)!important;max-width:62ch}
+.bb .reviews blockquote::before,.bb .reviews blockquote::after{content:none!important}
+.bb .reviews figcaption{margin-top:12px;font-weight:600;color:var(--sea)}
+.bb .lv p a{color:var(--sea);font-weight:600}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -152,6 +160,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .steps li{grid-template-columns:3rem 1fr}
 .bb .stats{grid-template-columns:1fr 1fr}
 .bb .lede .stats{grid-column:auto}
+.bb .reviews{grid-template-columns:1fr}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
