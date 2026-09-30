@@ -1,11 +1,7 @@
-<!-- BLUE BARREL: SURF LESSONS PAGE
-     Paste into ONE Code Block (untick "Display Source") on your Surf Lessons page.
-     Fonts: headings use 'Blue' (Hello-Handmade Sans), loaded by the @font-face rule already in your Custom CSS. Bricolage Grotesque + Figtree load below.
-     The script pulls the page flush under the site header. To lift it further, raise --bb-pull (e.g. 40px) on .bb below.
-     Scripts don't run in the Squarespace editor: check the live page or Preview. -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
+/* BLUE BARREL: SURF LESSONS PAGE. START OF CODE: the Code Block must begin with the style tag above.
+   Paste the whole file into ONE Code Block (untick Display Source). Headings use your site font 'Blue' from Custom CSS.
+   To lift the page higher, raise bb-pull (e.g. 40px) on .bb below. Scripts only run on the live page or Preview. */
 .bb{--ink:#0A2A3B;--mute:#4A6472;--line:#B9CFD0;--sea:#0F5C7A;--deep:#082638;--sun:#FFC24A;--panel:#DCEBEA;--bg:#EAF2F1;--h1:#F15A29;--bb-pull:0px;
 --f-h1:'Blue',var(--heading-font-font-family,'Bricolage Grotesque'),Georgia,serif;
 --f-head:'Bricolage Grotesque',Georgia,serif;--f-body:Figtree,system-ui,sans-serif;
@@ -102,6 +98,8 @@ margin-top:calc(-1 * (var(--bb-pull) + var(--bb-auto,0px)));width:100vw;margin-l
 @media(prefers-reduced-motion:no-preference){.bb .hero h1{animation:bbrise .8s ease-out both}@keyframes bbrise{from{opacity:0;transform:translateY(24px)}}}
 @media(prefers-reduced-motion:reduce){.bb .btn{transition:none}.bb .btn:hover{transform:none}}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 
 <div class="bb">
 
@@ -258,3 +256,4 @@ n.setAttribute('aria-valuetext',who);
 n.addEventListener('input',up);up();
 })();
 </script>
+<!-- END OF SURF LESSONS CODE -->
