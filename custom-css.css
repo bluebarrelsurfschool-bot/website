@@ -284,11 +284,11 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .page-section:has(.bb-foot){background:#041A24!important}
 .bb.bb-foot{background:#041A24;color:#C9DDE2;border-top:4px solid #4AC3CE;margin-top:0;padding:64px 0 28px;font-size:16px}
 .bb-foot .wrap{position:relative}
-.bb-foot .ft-wave{position:absolute;right:22px;top:-58px;width:150px;color:#4AC3CE}
-.bb-foot .ft-top{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding-bottom:36px;border-bottom:1px solid rgba(74,195,206,.3)}
-.bb-foot .ft-logo{display:block;width:110px;height:110px;border-radius:50%;background:#EDF6F8;padding:8px}
-.bb-foot .ft-logo img{object-fit:contain}
-.bb-foot .ft-name{font-family:var(--f-h1);font-size:1.8rem;line-height:1.05;color:#fff;margin:0 0 6px}
+.bb-foot .ft-wave{width:150px;color:#4AC3CE}
+.bb-foot .ft-top{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;padding-bottom:36px;border-bottom:1px solid rgba(74,195,206,.3)}
+.bb-foot .ft-logo{display:block;width:300px;max-width:100%;margin:0 0 16px}
+.bb-foot .ft-mark{display:block;width:100%;height:auto}
+.bb-foot .ft-act{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
 .bb-foot .ft-top p{margin:0;max-width:52ch}
 .bb-foot .ft-cols{display:grid;grid-template-columns:1fr 1fr 1.35fr 1fr;gap:28px;padding:36px 0;border-bottom:1px solid rgba(74,195,206,.3)}
 .bb-foot .ft-h{font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#4AC3CE;margin:0 0 12px}
@@ -334,9 +334,10 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.wave2{right:18px;top:-46px;width:120px}
 .bb .has-doodle > h2{padding-right:70px}
 .bb-foot .ft-top{grid-template-columns:1fr;gap:18px}
-.bb-foot .ft-logo{width:88px;height:88px}
+.bb-foot .ft-logo{width:230px}
+.bb-foot .ft-act{flex-direction:row;align-items:center;justify-content:space-between}
 .bb-foot .ft-cols{grid-template-columns:1fr 1fr;gap:26px 20px}
-.bb-foot .ft-wave{width:110px;top:-40px}
+.bb-foot .ft-wave{width:100px;order:2}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
