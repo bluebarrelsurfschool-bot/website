@@ -25,7 +25,7 @@ Work happens on branch `claude/blue-barrel-redesign-twaojg`.
 - Colours (CSS variables on `.bb`): ink and deep #06222F (navy), sea #028BBC (big numbers, blue bands, dots),
   sea-ink #016B94 (a deeper sea for small text and links on pale backgrounds, for readability), lite #4AC3CE (accent:
   tag pills, route lines, ticket tops, links and lines on navy), sun #FFC24A (buttons), mute #44616C, line #B3D5DD,
-  panel #D8EEF2, bg #EDF6F8, h1 #FFFFFF. Never use lite for text on pale backgrounds. orange #F15A29 (`--orange`) is the highlight box behind one key word in a heading (`<span class="hl">`, white text), as on the van livery; used on the Locations h1.
+  panel #D8EEF2, bg #EDF6F8, h1 #FFFFFF. Never use lite for text on pale backgrounds. orange #F15A29 (`--orange`) is a hand-painted brush stroke (inline SVG data URI in `.hl`) behind one key word in a heading (`<span class="hl">`, white text), as on the van livery; used on the Locations h1.
 - Headings h1–h3 use the site's own font `'Blue'` (Hello-Handmade Sans, loaded by an `@font-face` already in
   the user's Custom CSS). It's weight 400 only, and the font renders in capitals. Sentence case in the HTML.
 - Body: Figtree 17px. Extra display text (price figure, FAQ questions): Bricolage Grotesque 800.
