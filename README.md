@@ -75,6 +75,8 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
 | The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
 | Gift Vouchers | `gift-vouchers.html` | Built; request by email, payment link, digital voucher with unique code, valid 12 months. No Blueprint vouchers |
+| Site header | Custom CSS only (`#header` rules) | Built; owner sets menu order, button and social links off in Edit Site Header |
+| Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
 | Blog | – | To do |
 
 Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
@@ -108,6 +110,8 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
   if it changed, custom-css.css. The user replaces the whole Blue Barrel section in Custom CSS each time.
 - Surf Lessons has a Blueprint banner (`.bpr`) in the Blueprint's own royal blue #1F4CA0, with a grid, the wordmark and the white wave drawing as inline SVG (traced from the owner's Blueprint PDF). A small script sizes the wordmark so BLUEPRINT fills the grid width in whatever font loads.
 - Hand-drawn illustrations (van, palm tree, gulls from the owner) are inline SVG `.doodle` elements traced from the owner's JPGs, coloured with CSS (`currentColor`). On Locations: van under the intro heading, palm beside "More Cornwall surf spots", gulls on the navy booking band. On Surf Lessons: surfboards under the intro heading, fin beside the prices heading, wave on the navy gift voucher band. Reuse them on other pages the same way.
+- Header: Squarespace's own header can't hold a Code Block, so it's restyled in Custom CSS (white bar, navy Figtree links with a lite underline on hover/active, yellow pill button, light mobile menu, header social icons hidden). Menu: Surf Lessons, Group Lessons, The Blueprint, Locations, Gift Vouchers, About, Contact; Terms and Blog only in the footer.
+- Footer: one Code Block in the footer section (`footer.html`, class `bb bb-foot`, no shared script needed), navy #041A24 with a lite top border and the wave doodle.
 - Hero headings are white (`--h1`). `.hero.fit` (plus an `img.fill` copy) shows the whole photo on desktop; it's used on About.
 - The live site has a mailto typo `bluebarrelsurfschool@gmai.com` (header/footer, outside the Code Blocks); the owner should fix it.
 - Reviews on Home are real customer quotes (Harley, Richard, Tom, Edward). Keep their wording and fix only spelling.

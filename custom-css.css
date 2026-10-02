@@ -264,6 +264,39 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.fin{position:absolute;right:30px;top:-34px;width:120px;color:var(--ink)}
 .bb .doodle.wave2{position:absolute;right:30px;top:-64px;width:230px;color:var(--lite)}
 
+/* ---- site header (Squarespace's own header, restyled) ---- */
+#header .header-background,#header .header-background-solid{background:#FFFFFF!important}
+#header .header-border{border-color:#B3D5DD!important}
+#header .header-nav-item a{font-family:Figtree,system-ui,sans-serif!important;font-weight:600!important;font-size:15px!important;letter-spacing:0!important;text-transform:none!important;color:#06222F!important;background-image:none!important;text-decoration:none!important;padding-bottom:4px!important;border-bottom:3px solid transparent}
+#header .header-nav-item a:hover,#header .header-nav-item--active a{border-bottom-color:#4AC3CE}
+#header .header-actions-action--social,#header .header-menu-actions.social-accounts{display:none!important}
+#header .header-actions-action--cta .btn,#header .header-menu-cta .btn{background:#FFC24A!important;color:#06222F!important;border:0!important;border-radius:99px!important;font-family:Figtree,system-ui,sans-serif!important;font-weight:600!important;font-size:15px!important;letter-spacing:0!important;text-transform:none!important;padding:.85em 1.5em!important}
+#header .header-actions-action--cta .btn:hover,#header .header-menu-cta .btn:hover{background:#FFD27A!important}
+#header .burger-inner > div{background-color:#06222F!important}
+#header .header-menu-bg{background:#EDF6F8!important}
+#header .header-menu-nav-item a{font-family:'Blue',Figtree,sans-serif!important;font-weight:400!important;font-size:2rem!important;letter-spacing:0!important;text-transform:none!important;color:#06222F!important}
+@media (min-width:768px) and (max-width:1180px){#header .header-nav-item a{font-size:14px!important}}
+
+/* ---- site footer (Code Block in the footer) ---- */
+.page-section:has(.bb-foot){background:#041A24!important}
+.bb.bb-foot{background:#041A24;color:#C9DDE2;border-top:4px solid #4AC3CE;margin-top:0;padding:64px 0 28px;font-size:16px}
+.bb-foot .wrap{position:relative}
+.bb-foot .ft-wave{position:absolute;right:22px;top:-58px;width:150px;color:#4AC3CE}
+.bb-foot .ft-top{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding-bottom:36px;border-bottom:1px solid rgba(74,195,206,.3)}
+.bb-foot .ft-logo{display:block;width:110px;height:110px;border-radius:50%;background:#EDF6F8;padding:8px}
+.bb-foot .ft-logo img{object-fit:contain}
+.bb-foot .ft-name{font-family:var(--f-h1);font-size:1.8rem;line-height:1.05;color:#fff;margin:0 0 6px}
+.bb-foot .ft-top p{margin:0;max-width:52ch}
+.bb-foot .ft-cols{display:grid;grid-template-columns:1fr 1fr 1.35fr 1fr;gap:28px;padding:36px 0;border-bottom:1px solid rgba(74,195,206,.3)}
+.bb-foot .ft-h{font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#4AC3CE;margin:0 0 12px}
+.bb-foot ul{list-style:none;margin:0;padding:0}
+.bb-foot li{margin:0 0 9px;padding:0}
+.bb-foot a:not(.btn):not(.ft-logo){color:#fff;text-decoration:none}
+.bb-foot a:not(.btn):not(.ft-logo):hover{color:#4AC3CE;text-decoration:underline}
+.bb-foot .ft-plain{color:#C9DDE2}
+.bb-foot .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:22px;font-size:.88rem;color:#8FB0B9}
+.bb-foot .ft-bottom p{margin:0;font-size:.88rem;max-width:none}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
@@ -297,6 +330,10 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.fin{right:18px;top:-36px;width:66px}
 .bb .doodle.wave2{right:18px;top:-46px;width:120px}
 .bb .has-doodle > h2{padding-right:70px}
+.bb-foot .ft-top{grid-template-columns:1fr;gap:18px}
+.bb-foot .ft-logo{width:88px;height:88px}
+.bb-foot .ft-cols{grid-template-columns:1fr 1fr;gap:26px 20px}
+.bb-foot .ft-wave{width:110px;top:-40px}
 .bb .hero{min-height:0}
 .bb .hero .wrap{padding-top:36px}
 .bb .hero h1{font-size:2.6rem!important;margin-bottom:14px!important}
