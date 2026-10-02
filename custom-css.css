@@ -274,6 +274,9 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 #header .header-actions-action--cta .btn:hover,#header .header-menu-cta .btn:hover{background:#FFD27A!important}
 #header .burger-inner > div{background-color:#06222F!important}
 #header .header-menu-bg{background:#EDF6F8!important}
+#header .header-menu-nav-folder-content{justify-content:flex-start!important;padding-top:28px!important}
+#header .header-menu-nav-item{margin:0!important;padding:6px 0!important}
+#header .header-menu-cta{margin-bottom:84px!important}
 #header .header-menu-nav-item a{font-family:'Blue',Figtree,sans-serif!important;font-weight:400!important;font-size:2rem!important;letter-spacing:0!important;text-transform:none!important;color:#06222F!important}
 @media (min-width:768px) and (max-width:1180px){#header .header-nav-item a{font-size:14px!important}}
 
