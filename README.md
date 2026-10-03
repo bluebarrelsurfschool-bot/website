@@ -67,7 +67,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Page | File | State |
 |---|---|---|
 | Surf Lessons | `surf-lessons.html` | Live and checked on desktop and mobile |
-| Our Locations | `our-surf-lesson-locations.html` | Live; beach wind directions still need owner's check |
+| Our Locations | `our-surf-lesson-locations.html` | Live; wind/conditions shown only for South Fistral, Gwithian, Perran Sands and Praa Sands (owner request); no Helston references |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
 | About | `about.html` | Built; confirm whether Jack is the only instructor |
 | Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
