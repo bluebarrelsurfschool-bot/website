@@ -1,7 +1,9 @@
 # Blue Barrel Surf School: site redesign
 
 Code for the redesigned pages of https://www.bluebarrelsurf.co.uk (Squarespace 7.1).
-Work happens on branch `claude/blue-barrel-redesign-twaojg`.
+Work happens on branch `claude/hopeful-mendel-dyqn50` (earlier work was on `claude/blue-barrel-redesign-twaojg`).
+
+**The redesign is live** (October 2026): all pages below are swapped to their final slugs, old pages disabled, and the sitemap resubmitted in Google Search Console.
 
 ## How the pages are built
 
@@ -79,9 +81,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
 | Blog | – | To do |
 
-Open items: new pages are built on disabled test pages (General > Enable page off). On swap day the user renames the old
-page's slug (e.g. `surf-lessons-old`), gives the new page the real slug, SEO title and description, enables it, and adds a 301 from
-the test URL in URL Mappings. The homepage is swapped with "Set as homepage". An Instagram Block can sit in its own section below the
+Open items: Blog not redesigned yet. An Instagram Block can sit in its own section below the
 home Code Block if the user wants the live feed. Hayle as the base town in the schema isn't confirmed.
 Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Praa Sands.
 
@@ -98,6 +98,31 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
 | The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
 | Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Digital surf lesson gift vouchers for private 2-hour lessons from £100, all equipment included. Valid for 12 months. |
+
+## Go-live and redirects
+
+Homepage is the new Home page (slug `blue-barrel-surf-school`). Menu recommendation: Surf Lessons, Group Lessons, The Blueprint,
+Locations, Contact + Book button; About, Gift Vouchers, Terms and Blog in Not Linked (footer links). SEO title format `%p`
+(Marketing > SEO > Search Appearance > Pages). URL Mappings (Settings > Developer Tools); a mapping only works once no page
+(even a disabled one) uses the old slug:
+
+```
+/blue-barrel-surf-school -> / 301
+/our-locationss -> /our-surf-lesson-locations 301
+/our-locations -> /our-surf-lesson-locations 301
+/contact-8 -> /contact-us 301
+/book-now -> /surf-lessons 301
+/summer-surfing-1 -> /surf-lessons 301
+/winter-surfing -> /surf-lessons 301
+/sunset-sessions -> / 301
+/cold-water-crew -> /surf-lessons 301
+```
+
+## Next phase: SEO growth
+
+Goal: rank better in Google for Cornwall surf lesson searches and add pages that target them (e.g. per-beach pages such as
+Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesigned blog with useful guides). Build new pages in
+the same system (one Code Block, shared CSS, JSON-LD, FAQs from `<details>`) and link them from the existing pages.
 
 ## Working notes for the next session
 
