@@ -149,6 +149,15 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .reviews blockquote::before,.bb .reviews blockquote::after{content:none!important}
 .bb .reviews figcaption{margin-top:12px;font-weight:600;color:var(--sea-ink)}
 .bb .lv p a{color:var(--sea-ink);font-weight:600}
+.bb .levels.go .lv{position:relative}
+.bb .levels.go .ph img{transition:transform .35s}
+.bb .levels.go .lv:hover .ph img{transform:scale(1.04)}
+.bb .more{display:inline-flex;align-items:center;gap:.5em;margin-top:16px;border:2px solid var(--ink);border-radius:99px;padding:.6em 1.25em;color:var(--ink)!important;font-weight:600;text-decoration:none!important;transition:background .15s,color .15s}
+.bb .more span{transition:transform .15s}
+.bb .more::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0}
+.bb .levels.go .lv:hover .more{background:var(--ink);color:#fff!important}
+.bb .levels.go .lv:hover .more span{transform:translateX(4px)}
+.bb .more:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
 
 /* ---- contact page ---- */
 .bb .ways{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:2px solid var(--ink);margin-top:30px}
@@ -347,6 +356,6 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 }
 @keyframes bbrise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:no-preference){.bb .hero h1{animation:bbrise .8s ease-out both}}
-@media (prefers-reduced-motion:reduce){.bb .btn{transition:none}.bb .btn:hover{transform:none}}
+@media (prefers-reduced-motion:reduce){.bb .btn{transition:none}.bb .btn:hover{transform:none}.bb .levels.go .lv:hover .ph img,.bb .levels.go .lv:hover .more span{transform:none}}
 
 /* ===== BLUE BARREL REDESIGN: END ===== */
