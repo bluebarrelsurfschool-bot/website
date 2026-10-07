@@ -272,6 +272,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.boards{width:150px;margin-top:34px;color:var(--ink)}
 .bb .doodle.fin{position:absolute;right:30px;top:-34px;width:120px;color:var(--ink)}
 .bb .doodle.wave2{position:absolute;right:30px;top:-64px;width:230px;color:var(--lite)}
+.bb .doodle.board{width:70px;margin-top:34px;color:var(--ink)}
+.bb .doodle.sun{position:absolute;right:30px;top:-56px;width:110px;color:var(--lite)}
 
 /* ---- site header (Squarespace's own header, restyled) ---- */
 #header,#header .header-announcement-bar-wrapper,#header .header-display-desktop,#header .header-display-mobile,#header .header-background,#header .header-background-solid{background:#FFFFFF!important}
@@ -341,6 +343,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .doodle.boards{width:110px;margin-top:22px}
 .bb .doodle.fin{right:18px;top:-36px;width:66px}
 .bb .doodle.wave2{right:18px;top:-46px;width:120px}
+.bb .doodle.board{width:52px;margin-top:22px}
+.bb .doodle.sun{right:18px;top:-44px;width:62px}
 .bb .has-doodle > h2{padding-right:70px}
 .bb-foot .ft-top{grid-template-columns:1fr;gap:18px}
 .bb-foot .ft-logo{width:230px}

@@ -79,7 +79,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Gift Vouchers | `gift-vouchers.html` | Built; request by email, payment link, digital voucher with unique code, valid 12 months. No Blueprint vouchers |
 | Site header | Custom CSS only (`#header` rules) | Built; owner sets menu order, button and social links off in Edit Site Header |
 | Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
-| Private Surf Lessons Gwithian | `private-surf-lessons-gwithian.html` | Built (first beach page); uses drone photos DJI_0198 (hero), DJI_0955 (Godrevy view, top-aligned beside the tide steps), DJI_0173; owner wants no town tag pills on beach pages. Linked from Locations and the footer |
+| Private Surf Lessons Gwithian | `private-surf-lessons-gwithian.html` | Built (first beach page); uses drone photos DJI_0198 (hero), DJI_0955 (Godrevy view, top-aligned beside the tide steps), DJI_0173; owner wants no town tag pills on beach pages; drawings are the owner's sun (`.doodle.sun`, on the navy band) and surfboard (`.doodle.board`, under the intro heading). Linked from Locations and the footer |
 | Blog | – | To do |
 
 Open items: Blog not redesigned yet. An Instagram Block can sit in its own section below the
