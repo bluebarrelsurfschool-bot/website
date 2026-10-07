@@ -79,6 +79,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Gift Vouchers | `gift-vouchers.html` | Built; request by email, payment link, digital voucher with unique code, valid 12 months. No Blueprint vouchers |
 | Site header | Custom CSS only (`#header` rules) | Built; owner sets menu order, button and social links off in Edit Site Header |
 | Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
+| Private Surf Lessons Gwithian | `private-surf-lessons-gwithian.html` | Built (first beach page); uses drone photos DJI_0198 (hero), DJI_0955, DJI_0173. Linked from Locations and the footer |
 | Blog | – | To do |
 
 Open items: Blog not redesigned yet. An Instagram Block can sit in its own section below the
@@ -98,6 +99,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | Terms and Conditions | `terms-conditions` | Terms | Terms and Conditions \| Blue Barrel Surf School | Booking terms for Blue Barrel surf lessons in Cornwall: 48-hour cancellation and refund policy, weather cancellations, swimming ability and under-18 rules. |
 | The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
 | Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Digital surf lesson gift vouchers for private 2-hour lessons from £100, all equipment included. Valid for 12 months. |
+| Gwithian | `private-surf-lessons-gwithian` | Not linked (footer + Locations link) | Private Surf Lessons Gwithian \| Blue Barrel Surf School | Private surf lessons at Gwithian beach in St Ives Bay, near Hayle. Beginners to improvers, all kit included, meet at the beach car park. From £100. |
 
 ## Go-live and redirects
 
@@ -121,7 +123,9 @@ Locations, Contact + Book button; About, Gift Vouchers, Terms and Blog in Not Li
 ## Next phase: SEO growth
 
 Goal: rank better in Google for Cornwall surf lesson searches and add pages that target them (e.g. per-beach pages such as
-Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesigned blog with useful guides). Build new pages in
+Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesigned blog with useful guides). Gwithian facts from the owner: meet in Gwithian long stay car park (overlooks the beach); best mid to low tide, no beach access at
+high tide except the Godrevy end; all abilities, gentle summer waves, picks up swell well in the shoulder season and winter; toilets
+April–October; lifeguards Easter half term to October half term; no showers. Fistral page next. Build new pages in
 the same system (one Code Block, shared CSS, JSON-LD, FAQs from `<details>`) and link them from the existing pages.
 
 ## Working notes for the next session
