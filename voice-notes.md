@@ -7,4 +7,8 @@ Raw: "I started Blue Barrel Surf School after years of coaching across Cornwall,
 
 Draft for the site: "I started Blue Barrel after years of coaching across Cornwall: group lessons, private lessons, school sessions, surfing and paddleboarding. I wanted to build the surf school I wish I'd had when I was learning: one with real structure, goals to aim for, and someone in your corner along the way."
 
-Open follow-ups: how many years coaching; where he grew up / learnt; what was missing when he learnt.
+Follow-up, raw: "After eight years of coaching at different surf schools across Cornwall. I grew up surfing and learning to surf on the Isle of Wight. What was missing from my journey of learning to surf was guidance, a vision, just that support that would have helped me progress so much quicker and more efficiently."
+
+Facts: 8 years coaching at surf schools across Cornwall; grew up and learnt to surf on the Isle of Wight; missing when learning: guidance, a vision, support to progress faster.
+
+Draft for the site (v2): "I learnt to surf on the Isle of Wight, mostly figuring it out on my own. What I was missing was guidance: someone with a plan for where I was heading, and the support to get there faster. After eight years coaching at surf schools across Cornwall, I started Blue Barrel to be the surf school I wish I'd had: real structure, goals to aim for, and someone in your corner along the way." 
