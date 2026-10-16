@@ -51,17 +51,6 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .hero.fit{overflow:hidden}
 .bb .hero.fit > img.fill{filter:blur(28px) brightness(.55);transform:scale(1.15)}
 @media (min-width:761px){.bb .hero.fit > img:not(.fill){object-fit:contain}}
-/* Mobile book bar (markup and script in footer.html, moved to <body> on load) */
-.bb-bookbar{display:none}
-@media (max-width:760px){
-.bb-bookbar{display:flex;align-items:center;justify-content:space-between;gap:12px;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#06222F;border-top:3px solid #4AC3CE;padding:10px 16px;padding-bottom:calc(~"10px + env(safe-area-inset-bottom)");font-family:Figtree,system-ui,sans-serif;transform:translateY(110%);transition:transform .25s ease;box-shadow:0 -6px 20px rgba(6,34,47,.25)}
-.bb-bookbar.on{transform:translateY(0)}
-.bb-bookbar p{margin:0!important;color:#fff;line-height:1.25;font-size:14px}
-.bb-bookbar b{display:block;font-weight:600;font-size:15px}
-.bb-bookbar span{color:#C9DDE2;font-size:13px}
-.bb-bookbar a{flex:none;background:#FFC24A;color:#06222F!important;font-weight:600;font-size:15px;text-decoration:none!important;padding:.7em 1.3em;border:2px solid #06222F;border-radius:~"255px 18px 225px 18px/18px 225px 18px 255px"}
-}
-@media (max-width:760px) and (prefers-reduced-motion:reduce){.bb-bookbar{transition:none}}
 @media (max-width:760px){.bb .hero.fit > img.fill{display:none}}
 
 /* ruled lists */

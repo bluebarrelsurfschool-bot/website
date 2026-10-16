@@ -62,23 +62,4 @@
 </div>
 </div>
 </div>
-<!-- Mobile book bar: fixed to the bottom of the screen on phones, on every page. Appears after a little scrolling and hides when the footer or the menu is open. -->
-<div class="bb-bookbar" id="bb-bookbar" aria-hidden="true">
-<p><b>Private surf lessons</b><span>From &pound;100 &middot; all kit included</span></p>
-<a href="https://app.vikingbookings.com/widget/booking/b401000001000000e56b5529" tabindex="-1">Book a lesson</a>
-</div>
-<script>
-(function(){
-var bar=document.getElementById('bb-bookbar');if(!bar)return;
-if(document.body.classList.contains('sqs-edit-mode'))return;
-document.body.appendChild(bar); /* move out of the footer so Squarespace animations can't break position:fixed */
-var foot=document.querySelector('.bb-foot'),footIn=false,a=bar.querySelector('a');
-function upd(){var show=window.scrollY>320&&!footIn&&!document.body.classList.contains('header--menu-open');
-bar.classList.toggle('on',show);bar.setAttribute('aria-hidden',show?'false':'true');a.tabIndex=show?0:-1;}
-if(foot&&'IntersectionObserver' in window){new IntersectionObserver(function(e){footIn=e[0].isIntersecting;upd();}).observe(foot);}
-window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);
-new MutationObserver(upd).observe(document.body,{attributes:true,attributeFilter:['class']});
-upd();
-})();
-</script>
 <!-- END OF FOOTER CODE -->
