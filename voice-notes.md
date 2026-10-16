@@ -12,3 +12,10 @@ Follow-up, raw: "After eight years of coaching at different surf schools across 
 Facts: 8 years coaching at surf schools across Cornwall; grew up and learnt to surf on the Isle of Wight; missing when learning: guidance, a vision, support to progress faster.
 
 Draft for the site (v2): "I learnt to surf on the Isle of Wight, mostly figuring it out on my own. What I was missing was guidance: someone with a plan for where I was heading, and the support to get there faster. After eight years coaching at surf schools across Cornwall, I started Blue Barrel to be the surf school I wish I'd had: real structure, goals to aim for, and someone in your corner along the way." 
+
+## 2. Favourite beach to teach at, and why?
+Raw (voice transcript; "Gwivion" = Gwithian, "Gadrivi" = Godrevy): "My favourite beach to surf at is Gwithian in St Ives Bay. St Ives Bay is a huge three-mile stretch of coastline that offers a variety of wave size. It's consistent all year round. It has three miles of golden sands backed by sand dunes. Throughout the winter we can get some huge swells, and the natural headland offers really good protection from lots of wind directions and often harbours a more gentle wave in a big storm. It's a vast beach; even during the summer, in peak season, you can always find a nice quiet spot to surf. It's so beautiful with the Godrevy lighthouse in the background. It's a magical place to be in the water."
+
+Draft for the site: "My favourite place to surf is Gwithian, in St Ives Bay. It's three miles of golden sand backed by dunes, with Godrevy lighthouse in the background, and it's consistent all year round. In winter we get some huge swells, but the headland protects the bay from a lot of wind directions, so there's often a gentler wave tucked away even in a big storm. And it's so big that even in peak summer you can always find a quiet spot. It's a magical place to be in the water."
+
+Use on: Gwithian page (intro, in Jack's voice), Locations (St Ives Bay section), Home (personal line).
