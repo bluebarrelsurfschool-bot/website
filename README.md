@@ -30,7 +30,7 @@ Work happens on branch `claude/hopeful-mendel-dyqn50` (earlier work was on `clau
   panel #D8EEF2, bg #EDF6F8, h1 #FFFFFF. Never use lite for text on pale backgrounds. orange #F15A29 (`--orange`) is a hand-painted brush stroke (inline `<svg class="hl-bg">` inside the span, in the page HTML; a CSS data URI did not show on Squarespace) behind one key word in a heading (`<span class="hl">`, white text), as on the van livery; used on the Locations, Surf Lessons, Contact, About, Gift Vouchers and Group Lessons h1s (not Home, Blueprint or Terms). Copy the `<svg class="hl-bg">` from an existing page into the span.
 - Headings h1–h3 use the site's own font `'Blue'` (Hello-Handmade Sans, loaded by an `@font-face` already in
   the user's Custom CSS). It's weight 400 only, and the font renders in capitals. Sentence case in the HTML.
-- Buttons (`.btn`, `.btn.ghost`, `.more`, header CTA) have hand-drawn edges: a 2px navy (or currentColor) border and an uneven elliptical `border-radius` wrapped in `~"..."` so old LESS doesn't divide the `/`. Hover lifts and tilts slightly.
+- Buttons (`.btn`, `.btn.ghost`, `.more`, header CTA) have hand-drawn edges: a 2px navy (or currentColor) border and an uneven elliptical `border-radius` wrapped in `~"..."` so old LESS doesn't divide the `/`. Hover lifts and tilts slightly. Tags stay smooth pills on purpose: hand-drawn edges mean clickable.
 - Body: Figtree 17px. Extra display text (price figure, FAQ questions): Bricolage Grotesque 800.
 - Hero is a `<div class="hero">` (never `<header>`), with a photo, dark gradient, h1, paragraph, yellow `.btn`,
   outlined `.btn.ghost` and three `.facts`.
