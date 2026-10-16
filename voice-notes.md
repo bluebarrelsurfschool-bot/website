@@ -19,3 +19,10 @@ Raw (voice transcript; "Gwivion" = Gwithian, "Gadrivi" = Godrevy): "My favourite
 Draft for the site: "My favourite place to surf is Gwithian, in St Ives Bay. It's three miles of golden sand backed by dunes, with Godrevy lighthouse in the background, and it's consistent all year round. In winter we get some huge swells, but the headland protects the bay from a lot of wind directions, so there's often a gentler wave tucked away even in a big storm. And it's so big that even in peak summer you can always find a quiet spot. It's a magical place to be in the water."
 
 Use on: Gwithian page (intro, in Jack's voice), Locations (St Ives Bay section), Home (personal line).
+
+## 3. What do beginners get wrong in their first lesson?
+Raw: "When it comes down to your first lesson, it's important just to have fun. I see people setting super high expectations, but the reality is your first time in the water is experimentation. You're getting used to your surfboard, you're getting used to the waves, you're finding your rhythm, finding a balance. So it's really just trying to absorb it all, take it all in, try not to add too much pressure onto yourself. At the end of the day, surfing's about having fun. And once you've had a couple of experiences in the water and you start to establish a foundation, that's where we can put the measures in place to start seeing some good progression."
+
+Draft for the site: "The biggest mistake I see in first lessons? Expecting too much. Your first time in the water is experimentation: getting used to the board and the waves, finding your rhythm and your balance. So take it all in and don't put pressure on yourself. Surfing's about having fun. Once you've had a few sessions and built a foundation, that's when we start putting goals in place and you really see the progress."
+
+Use on: Surf Lessons (beginner section / FAQ "What if I can't stand up?"), Home, Blueprint (bridge from first lessons to structured coaching).
