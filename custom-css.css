@@ -24,7 +24,8 @@ font-family:var(--f-body);font-weight:400;font-size:17px;line-height:1.6;text-al
 .bb img{display:block;width:100%;height:100%;object-fit:cover}
 .bb .note{font-size:.9rem;color:var(--mute);margin:14px 0 0}
 .bb .tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
-.bb .tags li{border:1.5px solid var(--lite);background:rgba(74,195,206,.16);color:var(--ink);border-radius:99px;padding:.25em .9em;font-weight:600;font-size:.95rem;margin:0}
+.bb .tags li{border:1.5px solid var(--lite);background:rgba(74,195,206,.16);color:var(--ink);border-radius:~"30px 8px 26px 10px/12px 26px 9px 28px";padding:.25em .9em;font-weight:600;font-size:.95rem;margin:0}
+.bb .tags li:nth-child(even){border-radius:~"9px 28px 12px 24px/26px 10px 28px 8px"}
 
 /* remove Squarespace's own section spacing around the block */
 .page-section:has(.bb){padding-top:0!important;padding-bottom:0!important;min-height:0!important}
@@ -103,7 +104,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 
 /* ---- locations page ---- */
 .bb .alt{background:var(--panel)}
-.bb .tag{display:inline-block;border:1.5px solid var(--lite);background:rgba(74,195,206,.16);color:var(--ink);border-radius:99px;padding:.2em .9em;font-weight:600;font-size:.95rem;margin:0 0 14px}
+.bb .tag{display:inline-block;border:1.5px solid var(--lite);background:rgba(74,195,206,.16);color:var(--ink);border-radius:~"30px 8px 26px 10px/12px 26px 9px 28px";padding:.2em .9em;font-weight:600;font-size:.95rem;margin:0 0 14px}
 .bb .loc{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
 .bb .loc:first-of-type{border-top:2px solid var(--ink);margin-top:36px}
 .bb .loc .ph{height:420px;border-radius:14px;overflow:hidden}
