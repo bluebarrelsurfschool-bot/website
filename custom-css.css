@@ -154,7 +154,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .levels.go .lv:hover .ph img{transform:scale(1.04)}
 .bb .more{display:inline-flex;align-items:center;gap:.5em;margin-top:16px;border:2px solid var(--ink);border-radius:~"255px 18px 225px 18px/18px 225px 18px 255px";padding:.6em 1.25em;color:var(--ink)!important;font-weight:600;text-decoration:none!important;transition:background .15s,color .15s}
 .bb .more span{transition:transform .15s}
-.bb .more::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0}
+.bb .levels.go .more::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0}
 .bb .levels.go .lv:hover .more{background:var(--ink);color:#fff!important}
 .bb .levels.go .lv:hover .more span{transform:translateX(4px)}
 .bb .more:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
@@ -305,7 +305,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .day:before{left:26px;right:auto;top:20px;bottom:20px;border-top:0;border-left:3px dashed var(--sea)}
 .bb .day li{padding-left:76px;min-height:56px}
 .bb .day b{position:absolute;left:0;top:0;margin:0}
-.bb .doodle.van.v2van{width:110px;top:-34px}
+.bb .doodle.van.v2van{position:static;width:120px;margin:30px 0 0 auto}
 .bb .jq{padding-left:38px!important}
 .bb .jq:before{font-size:3.8rem}
 }
