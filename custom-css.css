@@ -72,6 +72,8 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .jq{position:relative;margin:0 0 18px!important;padding:0 0 0 46px!important;border:0!important;background:none!important;font-size:1.12rem;line-height:1.6;color:var(--ink)}
 .bb .jq:before{content:"\201C";position:absolute;left:0;top:-10px;font-family:var(--f-h1);font-size:4.6rem;line-height:1;color:var(--orange)}
 .bb .cta .more{margin-top:6px}
+.bb .jq-by{margin:-6px 0 22px 46px!important;font-weight:600;font-size:.95rem;color:var(--sea-ink)}
+.bb .sig.sm{font-size:1.5rem;margin-top:30px!important}
 @media (max-width:760px){
 .bb .jack{grid-template-columns:1fr;gap:40px}
 .bb .polaroid{max-width:300px;margin:0 auto}
