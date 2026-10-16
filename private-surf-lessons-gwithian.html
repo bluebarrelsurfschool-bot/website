@@ -125,7 +125,8 @@ return hb;}
 function flush(){
 if(document.body.classList.contains('sqs-edit-mode'))return;
 bb.style.setProperty('--bb-auto','0px');
-var gap=bb.getBoundingClientRect().top+window.scrollY-headBottom();
+var fl=getComputedStyle(bb).getPropertyValue('--bb-float').trim()==='1';
+var gap=bb.getBoundingClientRect().top+window.scrollY-(fl?0:headBottom());
 if(Math.abs(gap)>1&&Math.abs(gap)<400)bb.style.setProperty('--bb-auto',gap+'px');}
 flush();window.addEventListener('load',flush);window.addEventListener('resize',flush);setTimeout(flush,600);setTimeout(flush,1500);
 })();
