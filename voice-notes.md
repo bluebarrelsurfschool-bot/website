@@ -40,6 +40,7 @@ Raw: "What makes Blue Barrel different is the fact we're private. We're exclusiv
 Draft for the site: "We only do private lessons. That's it. Every session is built around your ability and what you want to get better at. Want to spend the whole two hours on your paddling, your duck dive, your turns, or just feeling confident out the back? Then that's what we'll do."
 
 Use on: Home (why Blue Barrel), Surf Lessons (intro), Group page (private even for groups).
+Used on About (quote band): "Our sessions are designed completely around you and what you want to get out of your time with us."
 Optional follow-up: what big-school lessons are like from the inside (group sizes, instructor ratios) for an honest contrast.
 
 ## 6–7. Experience, the van, kit and a lesson day

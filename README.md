@@ -72,7 +72,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Surf Lessons | `surf-lessons.html` | Live and checked on desktop and mobile |
 | Our Locations | `our-surf-lesson-locations.html` | Live; wind/conditions shown only for South Fistral, Gwithian, Perran Sands and Praa Sands (owner request); no Helston references |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
-| About | `about.html` | Built; confirm whether Jack is the only instructor |
+| About | `about.html` | v2: professional "we" voice about Jack (Isle of Wight, 8 years coaching), his quote in the blue band, "Private and mobile, by design", "How we coach" as a ruled list, no facts row, no Bricolage |
 | Home | `home.html` | v2 pilot in Jack's voice (from `voice-notes.md`): polaroid story, "Surfing's about having fun", lesson-day route with the van, Gwithian quote; no facts row, no Bricolage (`.bb.v2` sets `--f-head` to 'Blue'). Previous version is in git history |
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
