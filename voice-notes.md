@@ -41,3 +41,12 @@ Draft for the site: "We only do private lessons. That's it. Every session is bui
 
 Use on: Home (why Blue Barrel), Surf Lessons (intro), Group page (private even for groups).
 Optional follow-up: what big-school lessons are like from the inside (group sizes, instructor ratios) for an honest contrast.
+
+## 6–7. Experience, the van, kit and a lesson day
+Raw: "I've been surfing since I was a teenager. I've taught hundreds of people over the eight years I've been surf coaching. We have a van which we drive around Cornwall, the north and south coast, offering surf lessons at various beaches depending on the conditions and the time of year. Our kit is all high quality wetsuits. Depending on the season, we will give you a wetsuit appropriate for the temperature of the water. Every morning I'm up checking the surf forecast, seeing what the waves are like, checking out the webcams. If we've got an upcoming lesson, checking what the conditions are like, checking they're matching the ability before we jump in. And of course, having that pre-surf caffeine hit. Love a mocha."
+
+Facts: surfing since a teenager; hundreds of people taught over 8 years coaching; a van, north and south coast; good-quality wetsuits matched to the season and water temperature; checks forecast and webcams every morning; mocha before surfing.
+
+Draft for the site: "Every morning starts the same: forecast, webcams, and a mocha. If there's a lesson coming up, I'm checking the conditions match your ability before we ever get in the water. Then it's into the van and off to whichever beach on the north or south coast is working best. The kit's all good quality, with wetsuits matched to the water temperature, so you're warm whatever the season. I've been surfing since I was a teenager and I've taught hundreds of people in eight years of coaching, and I still love it."
+
+Use on: About (main story), Locations (how we choose the beach), Home.
