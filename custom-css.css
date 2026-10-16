@@ -280,6 +280,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb.v2{--f-head:'Blue',Figtree,sans-serif}
 .bb.v2 summary{font-weight:400;font-size:1.35rem;letter-spacing:.02em}
 .bb.v2 .stats b,.bb.v2 .steps b,.bb.v2 .big,.bb.v2 .t-price,.bb.v2 .keys b{font-weight:400;letter-spacing:.01em}
+.bb .hero p.tagline{font-size:1.1rem;letter-spacing:.01em;color:#D3E4E8;margin:0}
 .bb .proof{margin:26px 0 34px!important;color:#D3E4E8;font-size:.95rem;letter-spacing:.02em}
 .bb .jack{display:grid;grid-template-columns:minmax(0,.85fr) 1.15fr;gap:64px;align-items:center}
 .bb .polaroid{margin:0;background:#fff;padding:12px 12px 0;box-shadow:0 12px 30px rgba(6,34,47,.18);transform:rotate(-2.5deg);max-width:420px}
