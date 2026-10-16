@@ -26,3 +26,10 @@ Raw: "When it comes down to your first lesson, it's important just to have fun. 
 Draft for the site: "The biggest mistake I see in first lessons? Expecting too much. Your first time in the water is experimentation: getting used to the board and the waves, finding your rhythm and your balance. So take it all in and don't put pressure on yourself. Surfing's about having fun. Once you've had a few sessions and built a foundation, that's when we start putting goals in place and you really see the progress."
 
 Use on: Surf Lessons (beginner section / FAQ "What if I can't stand up?"), Home, Blueprint (bridge from first lessons to structured coaching).
+
+## 4. A lesson you'll never forget?
+Raw: "Some of my favourite sessions are people's first time in the water, seeing them climb up to their feet for the first time, that experience of gliding along the surface of the water. Doesn't matter how old you are, you're always grinning from ear to ear. Those first couple of waves are always very magical and brilliant to see."
+
+Draft for the site: "Some of my favourite sessions are people's very first. Watching someone climb to their feet and glide along the water for the first time never gets old. It doesn't matter how old you are, everyone's grinning from ear to ear on those first few waves."
+
+Use on: Home (personal line near reviews), Surf Lessons (beginner section), About.
