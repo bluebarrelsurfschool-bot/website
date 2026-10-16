@@ -73,7 +73,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Our Locations | `our-surf-lesson-locations.html` | Live; wind/conditions shown only for South Fistral, Gwithian, Perran Sands and Praa Sands (owner request); no Helston references |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
 | About | `about.html` | Built; confirm whether Jack is the only instructor |
-| Home | `home.html` | Built; old page had no h1 and mixed /our-locations links |
+| Home | `home.html` | v2 pilot in Jack's voice (from `voice-notes.md`): polaroid story, "Surfing's about having fun", lesson-day route with the van, Gwithian quote; no facts row, no Bricolage (`.bb.v2` sets `--f-head` to 'Blue'). Previous version is in git history |
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
 | The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
@@ -128,6 +128,11 @@ Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesign
 high tide except the Godrevy end; all abilities, gentle summer waves, picks up swell well in the shoulder season and winter; toilets
 April–October; lifeguards Easter half term to October half term; no showers. Fistral page next. Build new pages in
 the same system (one Code Block, shared CSS, JSON-LD, FAQs from `<details>`) and link them from the existing pages.
+
+## Voice and anti-template rules
+
+- Copy should sound like Jack (first person, his phrases from `voice-notes.md`), not polished marketing. Avoid stock phrases ("built around you", "tailored", "Know before you go"), automatic lists of three, and the same section stack on every page.
+- Give each page its own layout; not every page needs a facts row, numbered steps, FAQ and dark band.
 
 ## Working notes for the next session
 
