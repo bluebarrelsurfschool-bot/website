@@ -33,3 +33,11 @@ Raw: "Some of my favourite sessions are people's first time in the water, seeing
 Draft for the site: "Some of my favourite sessions are people's very first. Watching someone climb to their feet and glide along the water for the first time never gets old. It doesn't matter how old you are, everyone's grinning from ear to ear on those first few waves."
 
 Use on: Home (personal line near reviews), Surf Lessons (beginner section), About.
+
+## 5. What makes your lessons different from the big surf schools?
+Raw: "What makes Blue Barrel different is the fact we're private. We're exclusively a private surf school. All our sessions are 100% tailored around your ability and your surf goals. Whether you want to spend the whole session working on your paddling, your duck dive, your turns, or even your confidence out the back, our sessions are designed completely around you and what you want to get out of your time with us. That's what makes us unique."
+
+Draft for the site: "We only do private lessons. That's it. Every session is built around your ability and what you want to get better at. Want to spend the whole two hours on your paddling, your duck dive, your turns, or just feeling confident out the back? Then that's what we'll do."
+
+Use on: Home (why Blue Barrel), Surf Lessons (intro), Group page (private even for groups).
+Optional follow-up: what big-school lessons are like from the inside (group sizes, instructor ratios) for an honest contrast.
