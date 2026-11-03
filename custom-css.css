@@ -247,6 +247,10 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .t-bot::after{right:-32px}
 .bb .t-bot .btn{display:block;text-align:center;padding-left:1em;padding-right:1em}
 .bb .tickets + .note{margin-top:22px}
+.bb .vk-voucher{margin-top:30px;background:#fff;border-radius:14px;padding:clamp(16px,3vw,32px);min-height:160px;border-top:6px solid var(--lite)}
+.bb .vk-voucher img{width:auto;height:auto;max-width:100%}
+.bb .vk-voucher iframe{width:100%!important;border:0}
+.bb .vk-voucher + .note{margin-top:18px}
 
 /* ---- blueprint banner (surf lessons) ---- */
 .bb .bpr{--bpr:#1F4CA0;--grid:rgba(255,255,255,.3);background:var(--bpr);color:#fff}

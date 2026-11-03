@@ -77,7 +77,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Contact Us | `contact-us.html` | Built; old Form Block dropped (optional: add one in its own section below) |
 | Terms and Conditions | `terms-conditions.html` | Built; clause wording kept exactly as the old page (owner to confirm clause 1.1) |
 | The Blueprint | `the-blueprint.html` | Rebuilt from the owner's Blueprint PDF; owner to confirm per-person pricing, equipment, and no transformation video on Blueprint 3 |
-| Gift Vouchers | `gift-vouchers.html` | Built; request by email, payment link, digital voucher with unique code, valid 12 months. No Blueprint vouchers |
+| Gift Vouchers | `gift-vouchers.html` | Instant online purchase: Viking voucher widget (`widget.js?type=voucher`) embedded in `#bb-buy`; ticket and hero buttons jump to it; PDF voucher with a code emailed instantly, redeemed as a code in the booking form. Valid 12 months (owner to match in Viking settings). No Blueprint vouchers |
 | Site header | Custom CSS only (`#header` rules) | Built; owner sets menu order, button and social links off in Edit Site Header |
 | Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
 | Private Surf Lessons Gwithian | `private-surf-lessons-gwithian.html` | Built (first beach page); uses drone photos DJI_0198 (hero), DJI_0955 (Godrevy view, top-aligned beside the tide steps), DJI_0173; owner wants no town tag pills on beach pages; drawings are the owner's sun (`.doodle.sun`, on the navy band) and surfboard (`.doodle.board`, under the intro heading). Linked from Locations and the footer |
