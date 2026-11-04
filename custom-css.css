@@ -324,6 +324,10 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .hsplit p{color:#C9DDE2;font-size:1.12rem;max-width:36ch}
 .bb .hsplit .pic{position:relative;min-height:320px}
 .bb .hsplit .pic > img{position:absolute;top:0;right:0;bottom:0;left:0}
+.bb .hero.sl{min-height:~"min(66vh, 580px)"}
+.bb .hero.sl h1{font-size:clamp(3rem,8vw,6rem)!important;margin-bottom:6px!important}
+.bb .hero p.eyebrow{margin:0 0 14px;font-weight:600;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.bb .hero.sl .spec{margin:36px 0 44px}
 .bb .spec{display:flex;gap:0;margin:44px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.22);max-width:440px}
 .bb .spec div{flex:1;padding:0 18px;border-left:1px solid rgba(255,255,255,.22)}
 .bb .spec div:first-child{padding-left:0;border-left:0}
@@ -348,6 +352,7 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb.v2 .bpr-lead{font-weight:400;font-family:var(--f-h1)}
 @media (max-width:860px){
 .bb .hsplit{grid-template-columns:1fr;min-height:0}
+.bb .hero.sl{min-height:0}
 .bb .hsplit .pic{order:-1;min-height:260px}
 .bb .hsplit .txt{padding:40px 22px 44px}
 .bb .hsplit h1{font-size:2.6rem!important}
