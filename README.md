@@ -69,7 +69,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 
 | Page | File | State |
 |---|---|---|
-| Surf Lessons | `surf-lessons.html` | Live and checked on desktop and mobile |
+| Surf Lessons | `surf-lessons.html` | v2 (unique layout): split hero with a "From £100" price card, three level cards with "You'll learn" lists, price calculator, Blueprint banner, "When and where" cards, FAQ, gift band. No Bricolage. Previous version in git history |
 | Our Locations | `our-surf-lesson-locations.html` | Live; wind/conditions shown only for South Fistral, Gwithian, Perran Sands and Praa Sands (owner request); no Helston references |
 | Group Surf Lessons | `group-surf-lessons-cornwall.html` | Built; groups of 9–16 priced on request (owner to confirm) |
 | About | `about.html` | v2: professional "we" voice about Jack (Isle of Wight, 8 years coaching), his quote in the blue band, "Private and mobile, by design", "How we coach" as a ruled list, no facts row, no Bricolage |
