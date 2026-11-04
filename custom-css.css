@@ -317,47 +317,48 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 .bb .jq:before{font-size:3.8rem}
 }
 
-/* ---- surf lessons v2: split hero with price card, level cards, when/where cards ---- */
-.bb .hsplit{display:grid;grid-template-columns:1.05fr 1fr;background:var(--deep);color:#E6F1F0;min-height:~"min(78vh, 660px)"}
-.bb .hsplit .txt{display:flex;flex-direction:column;justify-content:center;padding:72px 56px 80px ~"max(22px, calc((100vw - 1080px) / 2 + 22px))"}
-.bb .hsplit h1{font-size:clamp(2.8rem,6vw,5.2rem)!important;line-height:.98!important;color:#fff!important;max-width:11ch;margin-bottom:20px!important}
-.bb .hsplit p{color:#D3E4E8;font-size:1.15rem;max-width:34ch}
+/* ---- surf lessons v2: split hero with a price line, numbered level columns, when/where columns ---- */
+.bb .hsplit{display:grid;grid-template-columns:1fr 1.15fr;background:var(--deep);color:#E6F1F0;min-height:~"min(82vh, 700px)"}
+.bb .hsplit .txt{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 72px ~"max(22px, calc((100vw - 1080px) / 2 + 22px))"}
+.bb .hsplit h1{font-size:clamp(2.8rem,5.6vw,5rem)!important;line-height:.98!important;color:#fff!important;max-width:11ch;margin-bottom:22px!important}
+.bb .hsplit p{color:#C9DDE2;font-size:1.12rem;max-width:36ch}
 .bb .hsplit .pic{position:relative;min-height:320px}
 .bb .hsplit .pic > img{position:absolute;top:0;right:0;bottom:0;left:0}
-.bb .pcard{position:absolute;left:-70px;bottom:56px;z-index:2;width:250px;background:#fff;color:var(--ink);border-radius:16px;padding:22px 24px 20px;box-shadow:0 16px 40px rgba(6,34,47,.35);transform:rotate(-2deg)}
-.bb .pcard .k{display:block;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sea-ink)}
-.bb .pcard b{display:block;font-family:var(--f-h1);font-weight:400;font-size:4rem;line-height:1;color:var(--sea);margin:4px 0 2px}
-.bb .pcard .s{display:block;font-weight:600;margin-bottom:12px}
-.bb .pcard ul{list-style:none;margin:0;padding:12px 0 0;border-top:2px dashed var(--line)}
-.bb .pcard li{margin:0;padding:3px 0;font-size:.95rem;color:var(--mute)}
-.bb .lvl3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
-.bb .lvc{display:flex;flex-direction:column;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(6,34,47,.08)}
-.bb .lvc .ph{aspect-ratio:4/3}
-.bb .lvc .bd{padding:22px 22px 26px}
-.bb .lvc .tag{margin-bottom:12px}
-.bb .lvc h3{margin-bottom:10px!important}
+.bb .spec{display:flex;gap:0;margin:44px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.22);max-width:440px}
+.bb .spec div{flex:1;padding:0 18px;border-left:1px solid rgba(255,255,255,.22)}
+.bb .spec div:first-child{padding-left:0;border-left:0}
+.bb .spec dt{margin:0;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#8FB0B9}
+.bb .spec dd{margin:4px 0 0;font-family:var(--f-h1);font-size:1.7rem;line-height:1.1;color:#fff}
+.bb .lvl3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:40px;border-top:2px solid var(--ink);padding-top:36px}
+.bb .lvc{display:flex;flex-direction:column}
+.bb .lvc .ph{aspect-ratio:4/5;border-radius:6px;overflow:hidden}
+.bb .lvc .bd{padding:22px 0 0}
+.bb .lvc .num{display:block;font-family:var(--f-h1);font-size:1.1rem;letter-spacing:.06em;color:var(--sea);margin-bottom:8px}
+.bb .lvc h3{margin-bottom:12px!important}
 .bb .lvc p{color:var(--mute);font-size:1rem}
-.bb .lvc p.lbl{margin:16px 0 0;font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sea-ink)}
-.bb .lvc .inc{margin:4px 0 0}
-.bb .lvc .inc li{font-size:.98rem}
-.bb .duo{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px;align-items:start}
-.bb .duo > div{background:var(--panel);border-radius:16px;padding:26px}
-.bb .duo .ph{height:200px;border-radius:12px;overflow:hidden;margin-bottom:18px}
+.bb .lvc p.lbl{margin:18px 0 6px;font-weight:600;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.bb ul.plain{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.bb ul.plain li{margin:0;padding:9px 0;border-bottom:1px solid var(--line);font-size:.98rem;color:var(--ink)}
+.bb .duo{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:36px;border-top:2px solid var(--ink)}
+.bb .duo > div{padding:32px 48px 8px 0}
+.bb .duo > div + div{padding:32px 0 8px 48px;border-left:1px solid var(--line)}
+.bb .duo .ph{height:220px;border-radius:6px;overflow:hidden;margin-bottom:22px}
 .bb .duo h3{margin-bottom:16px!important}
-.bb .duo .slot:first-of-type{border-top:2px solid var(--ink)}
+.bb .duo .slot:first-of-type{border-top:1px solid var(--line)}
 .bb.v2 .bpr-lead{font-weight:400;font-family:var(--f-h1)}
 @media (max-width:860px){
 .bb .hsplit{grid-template-columns:1fr;min-height:0}
-.bb .hsplit .pic{order:-1;min-height:250px}
-.bb .hsplit .txt{padding:44px 22px 48px}
+.bb .hsplit .pic{order:-1;min-height:260px}
+.bb .hsplit .txt{padding:40px 22px 44px}
 .bb .hsplit h1{font-size:2.6rem!important}
-.bb .pcard{left:auto;right:16px;bottom:-34px;width:210px;padding:16px 18px 14px}
-.bb .pcard b{font-size:3rem}
-.bb .pcard ul{display:none}
-.bb .hsplit .txt{padding-top:58px}
-.bb .lvl3,.bb .duo{grid-template-columns:1fr}
+.bb .spec{margin-top:32px}
+.bb .spec dd{font-size:1.4rem}
+.bb .lvl3{grid-template-columns:1fr;gap:44px}
+.bb .lvc .ph{aspect-ratio:4/3}
+.bb .duo{grid-template-columns:1fr}
+.bb .duo > div,.bb .duo > div + div{padding:28px 0 0;border-left:0}
+.bb .duo > div + div{margin-top:28px;border-top:1px solid var(--line)}
 }
-@media (max-width:860px) and (min-width:761px){.bb .lvl3{grid-template-columns:1fr 1fr}}
 
 /* ---- newsletter page: our Code Block plus Squarespace's own Newsletter Block (same section or the one below) ---- */
 .bb-news #bb-join{padding-bottom:12px}
