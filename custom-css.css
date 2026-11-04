@@ -319,8 +319,9 @@ main:has(.bb) > .page-section:first-child,#page > .page-section:first-child:has(
 
 /* ---- newsletter page: our Code Block, then Squarespace's own Newsletter Block in the next section ---- */
 .bb-news #bb-join{padding-bottom:12px}
-.page-section:has(.bb-news) + .page-section{background:#D8EEF2!important;padding-top:0!important;padding-bottom:clamp(56px,9vw,104px)!important}
-.page-section:has(.bb-news) + .page-section .section-background{background:#D8EEF2!important}
+.bb-news h1{font-size:clamp(2.4rem,6vw,4rem)!important;margin-bottom:18px!important}
+.page-section:has(.bb-news) + .page-section{background:#EDF6F8!important;padding-top:0!important;padding-bottom:clamp(56px,9vw,104px)!important}
+.page-section:has(.bb-news) + .page-section .section-background{background:#EDF6F8!important}
 .page-section:has(.bb-news) + .page-section .newsletter-block,.page-section:has(.bb-news) + .page-section .newsletter-form-wrapper{background:transparent!important;padding-left:0!important;padding-right:0!important;text-align:left!important}
 .page-section:has(.bb-news) + .page-section .newsletter-form-header{display:none!important}
 .page-section:has(.bb-news) + .page-section .newsletter-form-field-label,.page-section:has(.bb-news) + .page-section .newsletter-form-footnote,.page-section:has(.bb-news) + .page-section .newsletter-form-footnote p,.page-section:has(.bb-news) + .page-section .form-submission-text{font-family:Figtree,system-ui,sans-serif!important;color:#44616C!important;font-size:15px!important;text-transform:none!important;letter-spacing:0!important}
