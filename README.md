@@ -20,7 +20,7 @@ Work happens on branch `claude/determined-planck-77kldn` (earlier work was on `c
 - **Don't put a `<style>` block in the page files.** It was lost every time the user pasted, which is why
   all styling moved to Custom CSS.
 - Squarespace Custom CSS is compiled as LESS. Wrap `calc()` and `min()` in `~"..."`, use longhand
-  `font-*` properties (no `font:` shorthand with `/`), avoid `/` in values such as `grid-column:1 / -1` (old LESS divides it; use `span 2`), and check it compiles with both `less@1.7.5` and `less@4`.
+  `font-*` properties (no `font:` shorthand with `/`), avoid `/` in values such as `grid-column:1 / -1` (old LESS divides it; use `span 2`), and wrap CSS `filter` values that use `saturate()`, `contrast()` or similar in `~"..."` (Squarespace's LESS treats them as its own colour functions and rejects the whole box), and check it compiles with both `less@1.7.5` and `less@4`.
 
 ## Design rules
 
