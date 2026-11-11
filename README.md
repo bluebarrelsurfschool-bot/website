@@ -1,7 +1,7 @@
 # Blue Barrel Surf School: site redesign
 
 Code for the redesigned pages of https://www.bluebarrelsurf.co.uk (Squarespace 7.1).
-Work happens on branch `claude/hopeful-mendel-dyqn50` (earlier work was on `claude/blue-barrel-redesign-twaojg`).
+Work happens on branch `claude/determined-planck-77kldn` (earlier work was on `claude/hopeful-mendel-dyqn50` and `claude/blue-barrel-redesign-twaojg`).
 
 **The redesign is live** (October 2026): all pages below are swapped to their final slugs, old pages disabled, and the sitemap resubmitted in Google Search Console.
 
@@ -82,6 +82,7 @@ overlap, and re-runs on load, on resize and at 600ms and 1500ms. Manual override
 | Site footer | `footer.html` (Code Block in the footer) | Built; replaces the old footer, which had the gmai.com typo and a newsletter block with no storage |
 | Private Surf Lessons Gwithian | `private-surf-lessons-gwithian.html` | Built (first beach page); uses drone photos DJI_0198 (hero), DJI_0955 (Godrevy view, top-aligned beside the tide steps), DJI_0173; owner wants no town tag pills on beach pages; drawings are the owner's sun (`.doodle.sun`, on the navy band) and surfboard (`.doodle.board`, under the intro heading). Linked from Locations and the footer |
 | Newsletter | `newsletter.html` (or the centred minimal version `newsletter-minimal.html`, `.bb-news.center`, white with the orange sun) + a Squarespace Newsletter Block in the section directly below | Simple page (heading, one line, form on the light background), owner request; the Code Block (`.bb-news`) holds the design, the Newsletter Block stores sign-ups (Squarespace Email Campaigns or Mailchimp); CSS styles the block anywhere on the page via `body:has(.bb-news) .sqs-block-newsletter` (live page has the block in the same section as the Code Block). Linked from the footer |
+| Winter Surf Lessons | `winter-surf-lessons-cornwall.html` | Draft (Nov 2026), not yet live. Built to win back the winter searches the old `/winter-surfing` page ranked for (Search Console: "winter surfing" pos 10.6, "winter surf lessons" 12.4, "winter surf lessons cornwall" 18.8). Own element: a Nov–Mar sea-temperature strip (`.wt`) with thermometer bars and the winter kit list. Hero photo `_MG_2002` (previously only on the winter blog post). Owner to confirm: wetsuit thickness, boots/gloves/hood, sea temperatures, and to supply 2–3 more winter photos. Linked from nowhere yet: add it to the footer and link from Surf Lessons (winter times), Gwithian and the winter blog post |
 | Blog | – | To do |
 
 Open items: Blog not redesigned yet. An Instagram Block can sit in its own section below the
@@ -102,6 +103,7 @@ Beach-specific photos are wanted for Perran Sands, Marazion, Perranuthnoe and Pr
 | The Blueprint | `the-blueprint` | The Blueprint | The Blueprint \| Surf Coaching Programme in Cornwall | A structured private surf coaching programme in Cornwall for beginners and improvers, with video analysis every session and a progression plan. From £375. |
 | Gift Vouchers | `gift-vouchers` | Gift Vouchers | Surf Lesson Gift Vouchers Cornwall \| Blue Barrel Surf School | Give the gift of surfing in Cornwall. Digital surf lesson gift vouchers for private 2-hour lessons from £100, all equipment included. Valid for 12 months. |
 | Newsletter | `newsletter-sign-up` | Not linked (footer link) | Surf Newsletter \| Blue Barrel Surf School | Sign up to the Blue Barrel newsletter for surf tips from Jack, guides to surfing in Cornwall, first news of lesson dates and gift voucher reminders. |
+| Winter Surf Lessons | `winter-surf-lessons-cornwall` | Not linked (footer + page links) | Winter Surf Lessons in Cornwall \| Blue Barrel Surf School | Private winter surf lessons in Cornwall, November to March. Winter wetsuits, boots and gloves included, quieter beaches and better waves. From £100. |
 | Gwithian | `private-surf-lessons-gwithian` | Not linked (footer + Locations link) | Private Surf Lessons Gwithian \| Blue Barrel Surf School | Private surf lessons at Gwithian beach in St Ives Bay, near Hayle. Beginners to improvers, all kit included, meet at the beach car park. From £100. |
 
 ## Go-live and redirects
@@ -118,7 +120,7 @@ Locations, Contact + Book button; About, Gift Vouchers, Terms and Blog in Not Li
 /contact-8 -> /contact-us 301
 /book-now -> /surf-lessons 301
 /summer-surfing-1 -> /surf-lessons 301
-/winter-surfing -> /surf-lessons 301
+/winter-surfing -> /winter-surf-lessons-cornwall 301   (change from /surf-lessons once the winter page is live)
 /sunset-sessions -> / 301
 /cold-water-crew -> /surf-lessons 301
 ```
@@ -126,7 +128,7 @@ Locations, Contact + Book button; About, Gift Vouchers, Terms and Blog in Not Li
 ## Next phase: SEO growth
 
 Goal: rank better in Google for Cornwall surf lesson searches and add pages that target them (e.g. per-beach pages such as
-Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesigned blog with useful guides). Gwithian facts from the owner: meet in Gwithian long stay car park (overlooks the beach); best mid to low tide, no beach access at
+Fistral / Gwithian surf lessons, beginner and kids lessons, stag/hen, a redesigned blog with useful guides). Search Console (Aug–Nov 2026): 109 clicks, 60 of them branded; core terms sit at positions 19–28 ("surf lessons cornwall" 26.5, "private surf lessons cornwall" 18.6), Newquay queries 31–46, Perranporth 20–27, gift voucher queries ~38. Old URLs `/winter-surfing` (437 impressions, pos 10.9) and `/summer-surfing-1` were 301'd to /surf-lessons and lost their winter rankings; the mappings also point to `http://` (two hops), use `https://`. `/the-benefits-of-a-private-surf-lesson` is a 404 with impressions: map it to /surf-lessons. SEO title format is still not `%p` on the live site (titles end in the brand twice). Priorities: winter page, then Newquay (Fistral) and Perranporth pages, Google Business Profile and Google reviews. Gwithian facts from the owner: meet in Gwithian long stay car park (overlooks the beach); best mid to low tide, no beach access at
 high tide except the Godrevy end; all abilities, gentle summer waves, picks up swell well in the shoulder season and winter; toilets
 April–October; lifeguards Easter half term to October half term; no showers. Fistral page next. Build new pages in
 the same system (one Code Block, shared CSS, JSON-LD, FAQs from `<details>`) and link them from the existing pages.

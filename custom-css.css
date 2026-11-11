@@ -425,8 +425,26 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb-foot .ft-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:22px;font-size:.88rem;color:#8FB0B9}
 .bb-foot .ft-bottom p{margin:0;font-size:.88rem;max-width:none}
 
+/* ---- winter surf lessons page: sea temperature strip, Jack's quote ---- */
+.bb .wt{display:grid;grid-template-columns:repeat(5,1fr);list-style:none;margin:34px 0 0;padding:0;border-top:2px solid var(--ink)}
+.bb .wt li{display:flex;flex-direction:column;margin:0;padding:22px 12px 24px 0;border-bottom:1px solid var(--line)}
+.bb .wt .m{font-weight:600}
+.bb .wt .sh{display:none}
+.bb .wt .t{font-family:var(--f-h1);font-size:clamp(2.4rem,6vw,4rem);line-height:1;color:var(--sea);margin-top:8px}
+.bb .wt .bar{position:relative;display:block;width:14px;height:120px;margin-top:18px;border:1.5px solid var(--line);border-radius:99px;background:#fff;overflow:hidden}
+.bb .wt .bar i{position:absolute;left:0;right:0;bottom:0;background:var(--sea);border-radius:99px}
+.bb .wt + .note{margin-top:16px}
+.bb.winter .creds{margin-top:34px;max-width:620px}
+.bb .wq{margin-top:26px;padding-left:18px;border-left:3px solid var(--orange);font-size:1.15rem;line-height:1.5}
+.bb .wq span{display:block;margin-top:10px;font-size:.95rem;font-weight:600;color:var(--sea-ink)}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
+.bb .wt li{padding-right:6px}
+.bb .wt .t{font-size:1.9rem}
+.bb .wt .lg{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bb .wt .sh{display:inline}
+.bb .wt .bar{height:90px}
 .bb .lede,.bb .calc,.bb .when{grid-template-columns:1fr}
 .bb .lv{grid-template-columns:1fr}
 .bb .lv .ph{height:200px}
