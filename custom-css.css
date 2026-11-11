@@ -509,6 +509,9 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
+.bb table{min-width:0;font-size:.9rem}
+.bb th,.bb td{padding:9px 8px}
+.bb.bb-foot{padding-bottom:104px}
 .bb .w-hero{grid-template-columns:1fr;min-height:0}
 .bb .w-photo{order:-1;min-height:260px}
 .bb .w-panel{padding:34px 22px 40px}
