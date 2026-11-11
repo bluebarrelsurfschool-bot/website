@@ -500,7 +500,7 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb .w-plan,.bb .w-end{background:linear-gradient(180deg,#DCEEF3 0%,#E9F5F8 100%)}
 
 /* winter promo band on Home (seasonal; shares the winter page's frost background) */
-.bb .w-promo{padding:30px 0;color:#E6F1F0;border-bottom:3px solid #8FD3E0}
+.bb .w-promo{padding:30px 0;color:#E6F1F0;border-top:3px solid #8FD3E0;border-bottom:3px solid #8FD3E0}
 .bb .w-promo .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px 40px;flex-wrap:wrap}
 .bb .w-promo .w-eye{margin:0 0 6px;color:#CDEBF2}
 .bb .w-promo h2{font-size:clamp(1.7rem,3.6vw,2.4rem)!important;color:#fff!important}
