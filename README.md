@@ -136,6 +136,15 @@ the same system (one Code Block, shared CSS, JSON-LD, FAQs from `<details>`) and
 - Copy should sound like Jack (first person, his phrases from `voice-notes.md`), not polished marketing. Avoid stock phrases ("built around you", "tailored", "Know before you go"), automatic lists of three, and the same section stack on every page.
 - Give each page its own layout; not every page needs a facts row, numbered steps, FAQ and dark band.
 
+## Where we are (handover)
+
+- Work happens on branch `claude/hopeful-mendel-dyqn50`. Use the "website" cloud environment: it can load the live site and Squarespace assets for checks.
+- Live and done: Home v2 and About v2 (Jack's voice, professional), Gwithian beach page, Gift Vouchers with the Viking voucher widget (tested), simple Newsletter page at `/newsletter-sign-up` (minimal centred version, Squarespace Newsletter Block styled by `body:has(.bb-news)`), hand-drawn buttons, footer with Newsletter link.
+- Surf Lessons v2 is built (full-photo hero `.hero.sl`, h1 "Private surf lessons", price calculator straight under the hero). Suggested next tweaks: tuck the price table behind a "See all group prices" toggle, cut or shrink the intro section, restyle the Blueprint banner pills as a thin-line spec.
+- Next pages: Locations (own identity: hand-drawn map or drone hero, wind picker higher, beach cards), then Fistral beach page (owner to supply meeting point, parking, tides, facilities, photos), Blog.
+- Owner preferences: professional tone with a little personal touch; no town tag pills on beach pages; hand-drawn edges only on clickable buttons; always send the full Custom CSS box as `site-custom-css.css` + `custom-css.css` and check it compiles with LESS 1.7.5 and 4.
+- Still open: Blueprint pricing per person / equipment / transformation video; Terms clause 1.1; whether Jack is the only instructor; voucher expiry in Viking set to 12 months.
+
 ## Working notes for the next session
 
 - This environment can't fetch bluebarrelsurf.co.uk or static1.squarespace.com, and it can't load images from
