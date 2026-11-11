@@ -116,15 +116,17 @@ Locations, Contact + Book button; About, Gift Vouchers, Terms and Blog in Not Li
 
 ```
 /blue-barrel-surf-school -> / 301
-/our-locationss -> /our-surf-lesson-locations 301
-/our-locations -> /our-surf-lesson-locations 301
-/contact-8 -> /contact-us 301
-/book-now -> /surf-lessons 301
-/summer-surfing-1 -> /surf-lessons 301
-/winter-surfing -> /winter-surf-lessons-cornwall 301   (change from /surf-lessons once the winter page is live)
-/sunset-sessions -> / 301
-/cold-water-crew -> /surf-lessons 301
+/our-locationss -> https://www.bluebarrelsurf.co.uk/our-surf-lesson-locations 301
+/our-locations -> https://www.bluebarrelsurf.co.uk/our-surf-lesson-locations 301
+/contact-8 -> https://www.bluebarrelsurf.co.uk/contact-us 301
+/book-now -> https://www.bluebarrelsurf.co.uk/surf-lessons 301
+/summer-surfing-1 -> https://www.bluebarrelsurf.co.uk/surf-lessons 301
+/winter-surfing -> https://www.bluebarrelsurf.co.uk/winter-surf-lessons-cornwall 301
+/sunset-sessions -> https://www.bluebarrelsurf.co.uk/surf-lessons 301
+/cold-water-crew -> https://www.bluebarrelsurf.co.uk/surf-lessons 301
+/the-benefits-of-a-private-surf-lesson -> https://www.bluebarrelsurf.co.uk/surf-lessons 301
 ```
+Live and checked (Nov 2026): every mapping is a single hop to https. Use full `https://` targets; relative targets made Squarespace redirect via `http://`. Squarespace applies the first matching line, so never leave an old duplicate above a new one.
 
 ## Next phase: SEO growth
 
