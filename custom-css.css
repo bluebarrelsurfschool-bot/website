@@ -507,6 +507,10 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb .w-promo .w-facts{margin:8px 0 0;color:#B7D0D6}
 .bb .w-promo .btn{flex:none}
 
+/* text links inside paragraphs: underlined so they read as links on every background */
+.bb p a:not(.btn):not(.more):not(.w-link){text-decoration:underline!important;text-decoration-thickness:1.5px!important;text-underline-offset:3px;font-weight:600}
+.bb p a:not(.btn):not(.more):not(.w-link):hover{text-decoration-thickness:2.5px!important}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
 .bb table{min-width:0;font-size:.9rem}
