@@ -487,7 +487,7 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb .w-gift h2{margin-bottom:14px!important}
 /* winter mood: icy palette, faint frost speckle on navy, cooler photos, frosted cards */
 .bb.winter{--ice:#CDEBF2;--ice-2:#8FD3E0;background:linear-gradient(180deg,#F4FAFC 0%,#E4F1F5 100%)}
-.bb .w-hero,.bb .w-sea{background-color:#06222F;background-image:radial-gradient(circle,rgba(255,255,255,.22) 0 1.2px,transparent 1.8px),radial-gradient(circle,rgba(205,235,242,.14) 0 1.6px,transparent 2.2px),radial-gradient(circle,rgba(255,255,255,.12) 0 1px,transparent 1.6px),linear-gradient(165deg,#0D3A50 0%,#06222F 55%,#041A24 100%);background-size:96px 96px,150px 150px,233px 211px,100% 100%;background-position:0 0,48px 70px,117px 31px,0 0}
+.bb .w-hero,.bb .w-sea,.bb .w-promo{background-color:#06222F;background-image:radial-gradient(circle,rgba(255,255,255,.22) 0 1.2px,transparent 1.8px),radial-gradient(circle,rgba(205,235,242,.14) 0 1.6px,transparent 2.2px),radial-gradient(circle,rgba(255,255,255,.12) 0 1px,transparent 1.6px),linear-gradient(165deg,#0D3A50 0%,#06222F 55%,#041A24 100%);background-size:96px 96px,150px 150px,233px 211px,100% 100%;background-position:0 0,48px 70px,117px 31px,0 0}
 .bb .w-hero .w-eye,.bb .w-cond dd{color:var(--ice)}
 .bb .w-photo{overflow:hidden}
 .bb .w-photo img{filter:~"saturate(.72) contrast(1.06) brightness(.97)"}
@@ -498,6 +498,14 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb .w-if > div{background:rgba(255,255,255,.72);border:1px solid #fff;border-top:4px solid var(--ice-2);box-shadow:0 12px 32px rgba(6,34,47,.07)}
 .bb .w-where .wrap > .w-notice{background:rgba(255,255,255,.8);box-shadow:0 8px 24px rgba(6,34,47,.05)}
 .bb .w-plan,.bb .w-end{background:linear-gradient(180deg,#DCEEF3 0%,#E9F5F8 100%)}
+
+/* winter promo band on Home (seasonal; shares the winter page's frost background) */
+.bb .w-promo{padding:30px 0;color:#E6F1F0;border-bottom:3px solid #8FD3E0}
+.bb .w-promo .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px 40px;flex-wrap:wrap}
+.bb .w-promo .w-eye{margin:0 0 6px;color:#CDEBF2}
+.bb .w-promo h2{font-size:clamp(1.7rem,3.6vw,2.4rem)!important;color:#fff!important}
+.bb .w-promo .w-facts{margin:8px 0 0;color:#B7D0D6}
+.bb .w-promo .btn{flex:none}
 
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
