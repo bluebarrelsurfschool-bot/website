@@ -513,8 +513,38 @@ body:has(.bb-news.center) .sqs-block-newsletter input[type=email],body:has(.bb-n
 .bb .dark p a:not(.btn):not(.more):not(.w-link),.bb .bp p a:not(.btn):not(.more):not(.w-link),.bb .bpr p a:not(.btn):not(.more):not(.w-link),.bb .hero p a:not(.btn):not(.more):not(.w-link),.bb .hsplit p a:not(.btn):not(.more):not(.w-link),.bb .quote p a:not(.btn):not(.more):not(.w-link),.bb .w-bp p a:not(.btn):not(.more):not(.w-link),.bb .w-hero p a:not(.btn):not(.more):not(.w-link),.bb .w-promo p a:not(.btn):not(.more):not(.w-link),.bb .w-sea p a:not(.btn):not(.more):not(.w-link),.bb.bb-foot p a:not(.btn):not(.more):not(.w-link){color:#CDEBF2!important;text-decoration-color:rgba(205,235,242,.4)!important}
 .bb .dark p a:not(.btn):not(.more):not(.w-link):hover,.bb .bp p a:not(.btn):not(.more):not(.w-link):hover,.bb .bpr p a:not(.btn):not(.more):not(.w-link):hover,.bb .hero p a:not(.btn):not(.more):not(.w-link):hover,.bb .hsplit p a:not(.btn):not(.more):not(.w-link):hover,.bb .quote p a:not(.btn):not(.more):not(.w-link):hover,.bb .w-bp p a:not(.btn):not(.more):not(.w-link):hover,.bb .w-hero p a:not(.btn):not(.more):not(.w-link):hover,.bb .w-promo p a:not(.btn):not(.more):not(.w-link):hover,.bb .w-sea p a:not(.btn):not(.more):not(.w-link):hover,.bb.bb-foot p a:not(.btn):not(.more):not(.w-link):hover{text-decoration-color:#CDEBF2!important}
 
+/* christmas gift voucher promo (seasonal): Home ticket and Gift Vouchers ribbon */
+.bb .x-promo{padding:52px 0 8px}
+.bb .x-tk{position:relative;display:grid;grid-template-columns:1fr 250px;background:var(--sun);color:var(--ink);border-radius:16px;box-shadow:0 14px 34px rgba(6,34,47,.12)}
+.bb .x-tk::before,.bb .x-tk::after{content:"";position:absolute;right:236px;width:28px;height:28px;border-radius:50%;background:var(--bg);z-index:1}
+.bb .x-tk::before{top:-14px}
+.bb .x-tk::after{bottom:-14px}
+.bb .x-main{padding:36px 44px 38px}
+.bb .x-eye{margin:0 0 10px;font-size:.8rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.bb .x-main h2{font-size:clamp(1.9rem,4vw,2.8rem)!important;margin-bottom:14px!important}
+.bb .x-main p{color:var(--ink);max-width:56ch}
+.bb .x-main .btn{margin-top:6px;background:var(--ink);color:#fff!important}
+.bb .x-stub{position:relative;display:flex;flex-direction:column;justify-content:center;padding:32px 30px;background:var(--ink);color:#fff;border-radius:0 16px 16px 0}
+.bb .x-stub::before{content:"";position:absolute;left:0;top:18px;bottom:18px;border-left:3px dashed var(--sun)}
+.bb .x-stub p{margin:0}
+.bb .x-from{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#CDEBF2}
+.bb .x-stub .x-price{font-family:var(--f-h1);font-size:4.4rem;line-height:.95;color:var(--sun)}
+.bb .x-stub .x-small{margin-top:10px;color:#CDEBF2;font-size:.95rem;line-height:1.5}
+.bb .x-rib{background:var(--sun);padding:16px 0}
+.bb .x-rib .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px 28px;flex-wrap:wrap}
+.bb .x-rib p{margin:0;max-width:none;color:var(--ink)}
+.bb .x-link{color:var(--ink)!important;font-weight:700;text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px;white-space:nowrap}
+
 /* ---- mobile and motion ---- */
 @media (max-width:760px){
+.bb .x-promo{padding:40px 0 4px}
+.bb .x-tk{grid-template-columns:1fr}
+.bb .x-tk::before,.bb .x-tk::after{display:none}
+.bb .x-main{padding:28px 24px 30px}
+.bb .x-stub{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:baseline;gap:4px 14px;padding:22px 24px 24px;border-radius:0 0 16px 16px}
+.bb .x-stub::before{left:18px;right:18px;top:0;bottom:auto;border-left:0;border-top:3px dashed var(--sun)}
+.bb .x-stub .x-price{font-size:3.2rem}
+.bb .x-stub .x-small{flex-basis:100%;margin-top:4px}
 .bb table{min-width:0;font-size:.9rem}
 .bb th,.bb td{padding:9px 8px}
 .bb.bb-foot{padding-bottom:104px}
